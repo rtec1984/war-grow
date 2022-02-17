@@ -1961,7 +1961,9 @@ select {
     display: flex;
   }
 
-
+  .sm\:hidden {
+    display: none;
+  }
 
   .sm\:h-10 {
     height: 2.5rem;
