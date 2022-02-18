@@ -62,6 +62,7 @@
     </div>
   </main>
   <footer>
+      <div class="rtec">
     <div class="container">
         <div class="row">
           <div class="col-sm">
@@ -75,6 +76,7 @@
           </div>
         </div>
       </div>
+    </div>
   </footer>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
