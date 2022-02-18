@@ -65,13 +65,13 @@
     <div class="container">
         <div class="row">
           <div class="col-sm">
-            1
+            <a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="rtec">FEITO POR RTEC &copy; 2017-<?php echo date('Y'); ?></a>
           </div>
           <div class="col-sm">
-            2
+            
           </div>
           <div class="col-sm">
-            3
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fchat.whatsapp.com%2FKw5aROV8UboCTtGVPnkhbC&sa=D&sntz=1&usg=AFQjCNFxDeCh6QxS3wetZeyCBAPQJhYiSQ" target="_blank" class="rtec">GRUPO WAR-GROW &copy; 2019-<?php echo date('Y'); ?></a>
           </div>
         </div>
       </div>
