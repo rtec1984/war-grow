@@ -63,7 +63,7 @@
   </main>
   <footer>
     <div class="rtec">
-    <p>FEITO POR <a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="rtec">RTEC</a> &copy; 2017-<?php echo date('Y'); ?></p>
+    <p>FEITO POR <a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="rtec">RTEC</a> &copy; 2017-<?php echo date('Y'); ?>GRUPO WAR-GROW NO WHATSAPP &copy; 2019-<?php echo date('Y'); ?></p>
   </footer>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
