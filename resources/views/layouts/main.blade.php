@@ -72,7 +72,7 @@
             <a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="rtec">FEITO POR RTEC &copy; 2017-<?php echo date('Y'); ?></a>
           </div>
           <div class="col-sm">
-            <ion-icon name="logo-instagram"><a href="https://www.instagram.com/war_grow/" target="_blank"</a> </ion-icon><ion-icon name="logo-discord"><a href="https://discord.com/invite/7cNqtMQpnt" target="_blank"</a></ion-icon>
+            <a href="https://www.instagram.com/war_grow/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a> <a href="https://discord.com/invite/7cNqtMQpnt" target="_blank"><ion-icon name="logo-discord"></ion-icon></a>
           </div>
           <div class="col-sm">
             <a href="https://chat.whatsapp.com/Kw5aROV8UboCTtGVPnkhbC" target="_blank" class="rtec">GRUPO WAR-GROW &copy; 2019-<?php echo date('Y'); ?></a>
