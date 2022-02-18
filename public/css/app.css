@@ -2152,11 +2152,11 @@ footer {
   text-align: center;
   background-color: #757575;
   color: #ffffff;
-  padding: 30px;
+  padding: 20px;
   position: absolute;
   bottom: 0;
   width: 100%;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -2165,7 +2165,7 @@ footer p {
 }
 
 .rtec a {
-  font-size: 20px;
+  font-size: 14px;
   color: #ffffff;
   font-weight: 900;
 }
