@@ -62,9 +62,14 @@
     </div>
   </main>
   <footer>
-        <div class="row">
-        <div class="col-auto mr-auto"><a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="rtec">FEITO POR RTEC &copy; 2017-<?php echo date('Y'); ?></a></div>
-        <div class="col-auto"><a href="https://www.google.com/url?q=https%3A%2F%2Fchat.whatsapp.com%2FKw5aROV8UboCTtGVPnkhbC&sa=D&sntz=1&usg=AFQjCNFxDeCh6QxS3wetZeyCBAPQJhYiSQ" target="_blank" class="rtec">GRUPO WAR-GROW NO WHATSAPP &copy; 2019-<?php echo date('Y'); ?></a></div>
+    <div class="row justify-content-around">
+        <div class="col-4">
+            <a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="rtec">FEITO POR RTEC &copy; 2017-<?php echo date('Y'); ?></a>
+        </div>
+        <div class="col-4">
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fchat.whatsapp.com%2FKw5aROV8UboCTtGVPnkhbC&sa=D&sntz=1&usg=AFQjCNFxDeCh6QxS3wetZeyCBAPQJhYiSQ" target="_blank" class="rtec">GRUPO WAR-GROW NO WHATSAPP &copy; 2019-<?php echo date('Y'); ?></a>
+        </div>
+    </div>
   </footer>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
