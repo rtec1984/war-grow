@@ -2147,3 +2147,28 @@ select {
   }
 }
 
+/* footer */
+footer {
+  text-align: center;
+  background-color: #757575;
+  color: #ffffff;
+  padding: 30px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+.rtec a {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 900;
+}
+.rtec a:hover {
+  color: #000000;
+}
