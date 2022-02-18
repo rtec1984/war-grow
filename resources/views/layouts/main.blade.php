@@ -72,7 +72,7 @@
             
           </div>
           <div class="col-sm">
-            <a href="https://www.google.com/url?q=https%3A%2F%2Fchat.whatsapp.com%2FKw5aROV8UboCTtGVPnkhbC&sa=D&sntz=1&usg=AFQjCNFxDeCh6QxS3wetZeyCBAPQJhYiSQ" target="_blank" class="rtec">GRUPO WAR-GROW &copy; 2019-<?php echo date('Y'); ?></a>
+            <a href="https://chat.whatsapp.com/Kw5aROV8UboCTtGVPnkhbC" target="_blank" class="rtec">GRUPO WAR-GROW &copy; 2019-<?php echo date('Y'); ?></a>
           </div>
         </div>
       </div>
