@@ -63,7 +63,7 @@
   </main>
   <footer>
     <div class="rtec">
-    <p>FEITO POR <a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="rtec">RTEC</a> &copy; 2017-<?php echo date('Y'); ?> - = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = - GRUPO <a href="https://www.google.com/url?q=https%3A%2F%2Fchat.whatsapp.com%2FKw5aROV8UboCTtGVPnkhbC&sa=D&sntz=1&usg=AFQjCNFxDeCh6QxS3wetZeyCBAPQJhYiSQ" target="_blank" class="rtec">WAR-GROW</a> NO WHATSAPP &copy; 2019-<?php echo date('Y'); ?></p>
+    <p> = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = FEITO POR <a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="rtec">RTEC</a> &copy; 2017-<?php echo date('Y'); ?> = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = GRUPO <a href="https://www.google.com/url?q=https%3A%2F%2Fchat.whatsapp.com%2FKw5aROV8UboCTtGVPnkhbC&sa=D&sntz=1&usg=AFQjCNFxDeCh6QxS3wetZeyCBAPQJhYiSQ" target="_blank" class="rtec">WAR-GROW</a> NO WHATSAPP &copy; 2019-<?php echo date('Y'); ?> = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = </p>
   </footer>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
