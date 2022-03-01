@@ -8,27 +8,22 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/app.css">
-    <title>WAR-GROW</title>
+    <title>@yield('title')</title>
 <body>
   <header>
-    <nav class="navbar fixed-top navbar-light bg-light">
-        <a class="navbar-brand" href="#">Fixo na parte superior</a>
-      </nav>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="collapse navbar-collapse" id="navbar">
-        <a href="/" class="navbar-brand">
-          <img src="https://cdn.awsli.com.br/255/255552/logo/7ac966010f.jpg" alt="RTEC">
-        </a>
-        <ul class="navbar-nav">
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="/" class="navbar-brand">WAR-GROW</a>
+        <ul class="d-flex">
           <li class="nav-item">
-            <a href="/" class="nav-link">EVENTOS</a>
+            <a href="#" class="nav-link">RANKING</a>
           </li>
           <li class="nav-item">
-            <a href="/events/create" class="nav-link">CRIAR EVENTOS</a>
+            <a href="#" class="nav-link">CADASTRAR RESULTADO</a>
           </li>
           @auth
           <li class="nav-item">
-            <a href="/dashboard" class="nav-link">MEUS EVENTOS</a>
+            <a href="/dashboard" class="nav-link">PAINEL DE CONTROLE</a>
           </li>
           <li class="nav-item">
             <form action="/logout" method="POST">
@@ -64,26 +59,22 @@
       </div>
     </div>
   </main>
-  <footer>
-      <div class="rtec">
-    <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="rtec">FEITO POR RTEC &copy; 2017-<?php echo date('Y'); ?></a>
-          </div>
-          <div class="col-sm">
-            <a href="https://www.instagram.com/war_grow/" target="_blank">INSTAGRAM</a>
-          </div>
-            <div class="col-sm">
-            <a href="https://discord.com/invite/7cNqtMQpnt" target="_blank">DISCORD</a>
-          </div>
-          <div class="col-sm">
-            <a href="https://chat.whatsapp.com/Kw5aROV8UboCTtGVPnkhbC" target="_blank" class="rtec">GRUPO WAR-GROW &copy; 2019-<?php echo date('Y'); ?></a>
-          </div>
-        </div>
-      </div>
+  <nav class="navbar fixed-bottom navbar-light bg-light">
+    <div class="container-fluid">
+      <a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="nav-link">RTEC &copy; 2017-<?php echo date('Y'); ?></a>
+      <ul class="d-flex">
+        <li class="nav-item">
+          <a href="https://www.instagram.com/war_grow/" target="_blank" class="nav-link">INSTAGRAM</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://discord.com/invite/7cNqtMQpnt" target="_blank" class="nav-link">DISCORD</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://chat.whatsapp.com/Kw5aROV8UboCTtGVPnkhbC" target="_blank" class="nav-link">WHATSAPP</a>
+        </li>
+      </ul>
     </div>
-  </footer>
+  </nav>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
