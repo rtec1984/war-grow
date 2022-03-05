@@ -17,9 +17,6 @@
           <li class="nav-item">
             <a href="#" class="nav-link">RANKING</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">CADASTRAR RESULTADO</a>
-          </li>
           @auth
           <li class="nav-item">
             <a href="/dashboard" class="nav-link">PAINEL DE CONTROLE</a>
