@@ -2146,3 +2146,39 @@ select {
     padding-right: 2rem;
   }
 }
+
+/* navbar */
+.navbar {
+  position:absolute;
+  top: 0;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+/* footer */
+footer {
+  background-color: #343a40;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.rtec a {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 900;
+}
+.rtec a:hover {
+  color: red;
+}
+.container-fluid {
+  /* width: 100%; */
+  /* padding-right: 15px; */
+  /* padding-left: 15px; */
+  /* margin-right: auto; */
+  /* margin-left: auto; */
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

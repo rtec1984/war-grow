@@ -3,7 +3,7 @@
   <head>
     <!-- Meta tags Obrigatórias -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -11,10 +11,9 @@
     <title>@yield('title')</title>
 <body>
   <header>
-    <nav class="navbar navbar-light bg-light">
-      <div class="container-fluid">
-        <a href="/" class="navbar-brand">WAR-GROW</a>
-        <ul class="d-flex">
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="rtec">
+        <ul class="container-fluid">
           <li class="nav-item">
             <a href="#" class="nav-link">RANKING</a>
           </li>
@@ -59,22 +58,23 @@
       </div>
     </div>
   </main>
-  <nav class="navbar fixed-bottom navbar-light bg-light">
-    <div class="container-fluid">
-      <a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="nav-link">RTEC &copy; 2017-<?php echo date('Y'); ?></a>
-      <ul class="d-flex">
+  <footer>
+    <div class="rtec">
+      <ul class="container-fluid">
         <li class="nav-item">
-          <a href="https://www.instagram.com/war_grow/" target="_blank" class="nav-link">INSTAGRAM</a>
+      <a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="nav-link">ROCHA TECNOLOGIA &copy; 2017-<?php echo date('Y'); ?></a>
+      </li>
+       <li class="nav-item">
+          <a href="https://www.instagram.com/war_grow/" target="_blank" class="nav-link">PERFIL NO INSTAGRAM</a>
         </li>
         <li class="nav-item">
-          <a href="https://discord.com/invite/7cNqtMQpnt" target="_blank" class="nav-link">DISCORD</a>
+          <a href="https://discord.com/invite/7cNqtMQpnt" target="_blank" class="nav-link">COMUNIDADE NO DISCORD</a>
         </li>
         <li class="nav-item">
-          <a href="https://chat.whatsapp.com/Kw5aROV8UboCTtGVPnkhbC" target="_blank" class="nav-link">WHATSAPP</a>
+          <a href="https://chat.whatsapp.com/Kw5aROV8UboCTtGVPnkhbC" target="_blank" class="nav-link">GRUPO NO WHATSAPP &copy; 2019-<?php echo date('Y'); ?></a>
         </li>
       </ul>
-    </div>
-  </nav>
+  </footer>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
