@@ -15,11 +15,11 @@
       <div class="rtec">
         <ul class="container-fluid">
           <li class="nav-item">
-            <a href="#" class="nav-link">RANKING</a>
+            <a href="#" class="nav-link">Ranking</a>
           </li>
           @auth
           <li class="nav-item">
-            <a href="/dashboard" class="nav-link">PAINEL DE CONTROLE</a>
+            <a href="/dashboard" class="nav-link">Cadastrar Resultado</a>
           </li>
           <li class="nav-item">
             <form action="/logout" method="POST">
@@ -28,17 +28,17 @@
                 class="nav-link" 
                 onclick="event.preventDefault();
                 this.closest('form').submit();">
-                SAIR
+                Sair
               </a>
             </form>
           </li>
           @endauth
           @guest
           <li class="nav-item">
-            <a href="/login" class="nav-link">ENTRAR</a>
+            <a href="/login" class="nav-link">Entrar</a>
           </li>
           <li class="nav-item">
-            <a href="/register" class="nav-link">CADASTRAR</a>
+            <a href="/register" class="nav-link">Cadastrar</a>
           </li>
           @endguest
         </ul>
