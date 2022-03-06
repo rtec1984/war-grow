@@ -1,9 +1,9 @@
 @extends('layouts.main')
 
-@section('title', 'TESTE')
+@section('title', 'Ranking')
 
 @section('content')
 
-  
+<h1>Ranking</h1>  
 
 @endsection
