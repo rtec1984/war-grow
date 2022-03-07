@@ -66,19 +66,19 @@
   </main>
   <footer class="bg-dark bg-gradient text-center text-white">
     <!-- Grid container -->
-    <div class="container p-4 pb-0">
+    <div class="rtec">
       <!-- Section: Social media -->
       <section class="mb-4">
         <!-- Discord -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #ffffff00;" href="https://discord.com/invite/7cNqtMQpnt" target="_blank" role="button"><i
+        <a class="btn btn-primary btn-floating m-1" style="background-color: transparent;" href="https://discord.com/invite/7cNqtMQpnt" target="_blank" role="button"><i
             class="fab fa-discord"></i></a>
 
         <!-- Instagram -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #ffffff00;" href="https://www.instagram.com/war_grow/" target="_blank" role="button"><i
+        <a class="btn btn-primary btn-floating m-1" style="background-color: transparent;" href="https://www.instagram.com/war_grow/" target="_blank" role="button"><i
             class="fab fa-instagram"></i></a>
 
         <!-- Whatsapp -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #ffffff00;" href="https://chat.whatsapp.com/Kw5aROV8UboCTtGVPnkhbC" target="_blank" role="button"><i
+        <a class="btn btn-primary btn-floating m-1" style="background-color: transparent;" href="https://chat.whatsapp.com/Kw5aROV8UboCTtGVPnkhbC" target="_blank" role="button"><i
             class="fab fa-whatsapp	"></i></a>
 
       </section>

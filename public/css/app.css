@@ -2663,3 +2663,9 @@ footer {
     line-height: 2.3125rem;
     font-size: xx-large;
 }
+
+.mb-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
