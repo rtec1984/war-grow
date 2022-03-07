@@ -25,15 +25,15 @@
 
     <div class="topnav" id="myTopnav">
       <x-jet-application-mark class="block h-9 w-auto" />
-      <x-jet-nav-link href="/ranking"><i class="fa fa-fw fa-trophy"></i>
+      <x-jet-nav-link href="/ranking"><i class="fas fa-trophy"></i>
         {{ __('Ranking') }}
       </x-jet-nav-link>
       <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')"><i
-          class="fa fa-fw fa-plus"></i>
+          class="fas fa-dice"></i>
         {{ __('Cadastrar Resultado') }}
       </x-jet-nav-link>
       @guest
-      <x-jet-nav-link href="/login"><i class="fas fa-user-check"></i>
+      <x-jet-nav-link href="/login"><i class="fas fa-sign-in-alt"></i>
         {{ __('Entrar') }}
       </x-jet-nav-link>
       <x-jet-nav-link href="/register"><i class="fas fa-user-plus"></i>
@@ -44,7 +44,7 @@
       <form method="POST" action="{{ route('logout') }}">
         @csrf
         <x-jet-nav-link href="{{ route('logout') }}" onclick="event.preventDefault();
-                    this.closest('form').submit();"><i class="fas fa-user-times"></i>
+                    this.closest('form').submit();"><i class="fas fa-sign-out-alt"></i>
           {{ __('Sair') }}
         </x-jet-nav-link>
       </form>
@@ -69,28 +69,18 @@
     <div class="container p-4 pb-0">
       <!-- Section: Social media -->
       <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
-            class="fab fa-facebook-f"></i></a>
-
-        <!-- Twitter -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
-            class="fab fa-twitter"></i></a>
-
-        <!-- Google -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
-            class="fab fa-google"></i></a>
+        <!-- Discord -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #ffffff00;" href="https://discord.com/invite/7cNqtMQpnt" target="_blank" role="button"><i
+            class="fab fa-discord"></i></a>
 
         <!-- Instagram -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #ffffff00;" href="https://www.instagram.com/war_grow/" target="_blank" role="button"><i
             class="fab fa-instagram"></i></a>
 
-        <!-- Linkedin -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i
-            class="fab fa-linkedin-in"></i></a>
-        <!-- Github -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i
-            class="fab fa-github"></i></a>
+        <!-- Whatsapp -->
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #ffffff00;" href="https://chat.whatsapp.com/Kw5aROV8UboCTtGVPnkhbC" target="_blank" role="button"><i
+            class="fab fa-whatsapp	"></i></a>
+
       </section>
       <!-- Section: Social media -->
     </div>

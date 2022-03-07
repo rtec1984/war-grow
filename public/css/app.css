@@ -2655,3 +2655,11 @@ footer {
         display: block;
     }
 }
+
+.btn-floating .fab,
+.btn-floating .far,
+.btn-floating .fas {
+    width: 2.3125rem;
+    line-height: 2.3125rem;
+    font-size: xx-large;
+}
