@@ -43,7 +43,7 @@
         </x-jet-nav-link>
         @endguest
         @auth
-        <form method="POST" action="{{ route('logout') }}">
+        <form class="sair" method="POST" action="{{ route('logout') }}">
           @csrf
           <x-jet-nav-link href="{{ route('logout') }}" onclick="event.preventDefault();
                     this.closest('form').submit();"><i class="fas fa-sign-out-alt"></i>
