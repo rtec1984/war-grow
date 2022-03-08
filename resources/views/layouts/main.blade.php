@@ -17,42 +17,45 @@
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
   <title>@yield('title')</title>
+</head>
 
 <body>
   <header>
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <nav class="rtec">
+      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <div class="topnav" id="myTopnav">
-      <x-jet-application-mark class="block h-9 w-auto" />
-      <x-jet-nav-link href="/ranking"><i class="fas fa-trophy"></i>
-        {{ __('Ranking') }}
-      </x-jet-nav-link>
-      <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')"><i
-          class="fas fa-dice"></i>
-        {{ __('Cadastrar Resultado') }}
-      </x-jet-nav-link>
-      @guest
-      <x-jet-nav-link href="/login"><i class="fas fa-sign-in-alt"></i>
-        {{ __('Entrar') }}
-      </x-jet-nav-link>
-      <x-jet-nav-link href="/register"><i class="fas fa-user-plus"></i>
-        {{ __('Cadastrar Jogador') }}
-      </x-jet-nav-link>
-      @endguest
-      @auth
-      <form method="POST" action="{{ route('logout') }}">
-        @csrf
-        <x-jet-nav-link href="{{ route('logout') }}" onclick="event.preventDefault();
-                    this.closest('form').submit();"><i class="fas fa-sign-out-alt"></i>
-          {{ __('Sair') }}
+      <div class="topnav" id="myTopnav">
+        <x-jet-application-mark class="block h-9 w-auto" />
+        <x-jet-nav-link href="/ranking"><i class="fas fa-trophy"></i>
+          {{ __('Ranking') }}
         </x-jet-nav-link>
-      </form>
-      @endauth
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
+        <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')"><i
+            class="fas fa-dice"></i>
+          {{ __('Cadastrar Resultado') }}
+        </x-jet-nav-link>
+        @guest
+        <x-jet-nav-link href="/login"><i class="fas fa-sign-in-alt"></i>
+          {{ __('Entrar') }}
+        </x-jet-nav-link>
+        <x-jet-nav-link href="/register"><i class="fas fa-user-plus"></i>
+          {{ __('Cadastrar Jogador') }}
+        </x-jet-nav-link>
+        @endguest
+        @auth
+        <form method="POST" action="{{ route('logout') }}">
+          @csrf
+          <x-jet-nav-link href="{{ route('logout') }}" onclick="event.preventDefault();
+                    this.closest('form').submit();"><i class="fas fa-sign-out-alt"></i>
+            {{ __('Sair') }}
+          </x-jet-nav-link>
+        </form>
+        @endauth
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
   </header>
   <main>
     <div class="container-fluid">
@@ -70,21 +73,20 @@
       <!-- Section: Social media -->
       <section class="mb-4">
         <!-- Discord -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: transparent;" href="https://discord.com/invite/7cNqtMQpnt" target="_blank" role="button"><i
-            class="fab fa-discord"></i></a>
+        <a class="btn btn-link btn-floating btn-lg m-1" href="https://discord.com/invite/7cNqtMQpnt" target="_blank">
+          <i class="fab fa-discord"></i></a>
 
         <!-- Instagram -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: transparent;" href="https://www.instagram.com/war_grow/" target="_blank" role="button"><i
-            class="fab fa-instagram"></i></a>
+        <a class="btn btn-link btn-floating btn-lg m-1" href="https://www.instagram.com/war_grow/" target="_blank">
+          <i class="fab fa-instagram"></i></a>
 
         <!-- Whatsapp -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: transparent;" href="https://chat.whatsapp.com/Kw5aROV8UboCTtGVPnkhbC" target="_blank" role="button"><i
-            class="fab fa-whatsapp	"></i></a>
+        <a class="btn btn-link btn-floating btn-lg m-1" href="https://chat.whatsapp.com/Kw5aROV8UboCTtGVPnkhbC" target="_blank">
+          <i class="fab fa-whatsapp	"></i></a>
 
       </section>
       <!-- Section: Social media -->
     </div>
-
     <!-- Copyright -->
     <div class="rtec">
       <a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="nav-link"><i

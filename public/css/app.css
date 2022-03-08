@@ -2623,7 +2623,10 @@ footer {
     .topnav a.icon {
         float: right;
         display: block;
-        padding: 10px;
+        padding: 9px;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .topnav {
         background-color: #333;
@@ -2668,4 +2671,14 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+form {
+    display: flex;
+    margin-top: 0em;
+}
+
+.font-medium {
+    font-weight: 500;
+    font-size: large;
 }
