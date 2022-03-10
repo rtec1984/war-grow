@@ -4,7 +4,7 @@
 
 @section('content')
 
-
+<div class="container"
 <div class="wg">
     <img src="https://war-grow.s3.amazonaws.com/war-grow.png" class="img-thumbnail" />
 
@@ -20,5 +20,5 @@
     
     <p>Tudo o que fazemos é pensado para oferecer desafios na medida certa, com equilíbrio entre sorte e estratégia.</p>
 </div>   
-
+</div>
 @endsection

@@ -2616,7 +2616,7 @@ select {
 
 footer {
     background-color: #333;
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
 }
@@ -2757,6 +2757,7 @@ footer {
     font-style: italic;
     padding-top: 10px;
     overflow-wrap: break-word;
+    position: relative;
 }
 
 @media screen and (min-width: 600px) {
