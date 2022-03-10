@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/regras', function () {
+    return view('regras');
+});
+
 Route::get('/ranking', function () {
     return view('ranking');
 });
