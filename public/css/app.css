@@ -2736,7 +2736,7 @@ footer {
 .mb-4 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .sair {
@@ -2770,6 +2770,10 @@ footer {
         width: 75%;
         display: inline-flex;
     }
+    .web {
+        display: inline-flex;
+        vertical-align: middle;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -2781,4 +2785,9 @@ footer {
         width: 100%;
         display: inline-flex;
     }
+    .web {
+        display: none;
+    }
 }
+
+

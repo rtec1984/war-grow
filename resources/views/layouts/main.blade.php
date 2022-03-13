@@ -77,28 +77,35 @@
       <section class="mb-4">
         <!-- Discord -->
         <a class="btn btn-link btn-floating btn-lg m-1" href="https://discord.com/invite/7cNqtMQpnt" target="_blank">
-          <i class="fab fa-discord"></i></a>
+          <i class="fab fa-discord"></i>
+          <p class="web">Comunidade no Discord</p>
+        </a>
 
         <!-- Instagram -->
         <a class="btn btn-link btn-floating btn-lg m-1" href="https://www.instagram.com/war_grow/" target="_blank">
-          <i class="fab fa-instagram"></i></a>
+          <i class="fab fa-instagram"></i>
+          <p class="web">Perfil no Instagram</p>
+        </a>
 
         <!-- Whatsapp -->
-        <a class="btn btn-link btn-floating btn-lg m-1" href="https://chat.whatsapp.com/Kw5aROV8UboCTtGVPnkhbC" target="_blank">
-          <i class="fab fa-whatsapp	"></i></a>
+        <a class="btn btn-link btn-floating btn-lg m-1" href="https://chat.whatsapp.com/Kw5aROV8UboCTtGVPnkhbC"
+          target="_blank">
+          <i class="fab fa-whatsapp	"></i>
+          <p class="web">Grupo no WhatsApp</p>
+        </a>
 
       </section>
       <!-- Section: Social media -->
-    </div>
-    <!-- Copyright -->
-    <div class="rtec">
+
+      <!-- Copyright -->
+
       <a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="nav-link"><i
           class="fa fa-fw fa-laptop"></i> ROCHA TECNOLOGIA &copy;
         2017-
         <?php echo date('Y'); ?>
       </a>
+      <!-- Copyright -->
     </div>
-    <!-- Copyright -->
   </footer>
   <!-- JavaScript (Opcional) -->
   <script>

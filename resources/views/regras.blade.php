@@ -16,36 +16,36 @@
         #section1 {
             padding: 50px;
             height: auto;
-            color: #fff;
-            background-color: #1E88E5;
+            color: black;
+            background-color: #ddd;
         }
 
         #section2 {
             padding: 50px;
             height: auto;
             color: #fff;
-            background-color: #673ab7;
+            background-color: #333;
         }
 
         #section3 {
             padding: 50px;
             height: auto;
-            color: #fff;
-            background-color: #ff9800;
+            color: black;
+            background-color: #ddd;
         }
 
         #section4 {
             padding: 50px;
             height: auto;
             color: #fff;
-            background-color: #00bcd4;
+            background-color: #333;
         }
 
         #section5 {
             padding: 50px;
             height: auto;
-            color: #fff;
-            background-color: #009688;
+            color: black;
+            background-color: #ddd;
         }
 
         .navbar-brand {
@@ -74,10 +74,10 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><a href="#section1">Comportamento</a></li>
-                        <li><a href="#section2">Jogos</a></li>
-                        <li><a href="#section3">Ranking</a></li>
-                        <li><a href="#section4">Chat</a></li>
-                        <li><a href="#section5">Abandono</a></li>
+                        <li><a href="#section2">Partidas</a></li>
+                        <li><a href="#section3">Resultados</a></li>
+                        <li><a href="#section4">Punições</a></li>
+                        <li><a href="#section5">Ranking</a></li>
                     </ul>
                     </li>
                     </ul>
@@ -87,47 +87,55 @@
     </nav>
 
     <div id="section1" class="container-fluid">
-        <h1>Comportamento</h1>
+        <h1>COMPORTAMENTO</h1>
         <br>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
+        <h4>RESPEITO AOS MEMBROS DO GRUPO DENTRO E FORA DO JOGO</h4>
+        <br>
+        <p>Evitar postar mensagens que possam ser interpretadas por um ou mais membros como sendo de caráter ofensivo,
+            as brincadeiras devem ser saudáveis e sempre com respeito.</p>
+        <p>Não passe correntes, faça propagandas, discuta política, religião, futebol, ou qualquer outro tema que não
+            faça parte do perfil do grupo.</p>
+        <br>
+        <h4>PROMOÇÕES</h4>
+        <br>
+        <p>No dia do aniversário do jogador ele marca em dobro e não perde pontos!</p>
+        <p>Dia 02/10 aniversário de criação do grupo, neste dia todos marcam em dobro e ninguém perde pontos!</p>
     </div>
     <div id="section2" class="container-fluid">
-        <h1>Jogos</h1>
+        <h1>PARTIDAS</h1>
         <br>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
+        <p>As partidas podem ser jogadas quantas vezes quiser, uma de cada vez com 3, 4, 5 ou 6 jogadores.</p>
+        <p>Para que as partidas sejam válidas para o ranking é necessário que uma lista com o número da partida e data
+            seja montada com o nome do jogador e apelido, com início e resultado marcados no grupo.</p>
+        <p>Partidas sem início e resultado não serão contabilizadas no ranking.</p>
+        <p>Partidas iniciadas só podem ser reiniciadas se travar o jogo de alguém ou alguém cair na primeira rodada, se
+            houver ataque a partida não pode ser reiniciada.</p>
+        <p>Usem sempre o bom senso e evitem confusão, todos estão no grupo para se divertir e jogar com respeito e
+            honestidade.</p>
+        <br>
+        <h4>PARTIDAS COM 1 HORA DE DURAÇÃO</h4>
+        <br>
+        <p>Prestar atenção no horário que a partida iniciou para saber informar o início da última rodada no chat da
+            partida.</p>
+        <p>A última rodada se inicia sempre após 1 hora começando pelo primeiro jogador que abre a rodada e finalizando
+            no último.</p>
+        <p>Se houver conclusão do objetivo na última rodada a partida vale 100% dos pontos, senão houver vencedor no
+            objetivo
+            a partida vale 50% do pontos.</p>
+        <p>Todas as partidas iniciadas devem ter seus resultados marcados no grupo!</p>
+        <br>
+        <h4>PARTIDAS VENCIDAS NO TEMPO</h4>
+        <br>
+        <p>Totalidade de cada continente: Ásia: 7 pontos, América do Norte: 5 pontos, Europa: 5 pontos, África: 3
+            pontos, Oceania: 2 pontos, América do Sul: 2 pontos ;</p>
+
+        <p>Quantidade de exércitos: 1% do somatório dos mesmos ;</p>
+
+        <p>Quantidade dos territórios: 1 ponto para cada território.</p>
+        <p>Vence quem somar mais pontos segundo esse critério.</p>
     </div>
     <div id="section3" class="container-fluid">
-        <h1>Ranking</h1>
+        <h1>RESULTADOS</h1>
         <br>
         <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
             look at the navigation bar while scrolling!</p>
@@ -147,7 +155,7 @@
             look at the navigation bar while scrolling!</p>
     </div>
     <div id="section4" class="container-fluid">
-        <h1>Chat</h1>
+        <h1>PUNIÇÕES</h1>
         <br>
         <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
             look at the navigation bar while scrolling!</p>
@@ -167,7 +175,7 @@
             look at the navigation bar while scrolling!</p>
     </div>
     <div id="section5" class="container-fluid">
-        <h1>Abandono</h1>
+        <h1>RANKING</h1>
         <br>
         <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
             look at the navigation bar while scrolling!</p>
