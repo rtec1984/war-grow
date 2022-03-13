@@ -16,7 +16,12 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
+  <!-- DataTables -->
+  <link href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
+
+
   <title>@yield('title')</title>
+
 </head>
 
 <body>
@@ -131,6 +136,19 @@
   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+  <!-- DataTables -->
+  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function() {
+        $('#ranking').DataTable({
+            "language": {
+              "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Portuguese-Brasil.json"
+            }
+        });
+    });
+</script>
+
 </body>
 
 </html>

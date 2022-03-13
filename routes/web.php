@@ -27,6 +27,10 @@ Route::get('/ranking', function () {
     return view('ranking');
 });
 
+Route::get('/teste', function () {
+    return view('teste');
+});
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

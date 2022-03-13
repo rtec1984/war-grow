@@ -2770,6 +2770,7 @@ footer {
         width: 75%;
         display: inline-flex;
     }
+
     .web {
         display: inline-flex;
         vertical-align: middle;
@@ -2785,9 +2786,19 @@ footer {
         width: 100%;
         display: inline-flex;
     }
+
     .web {
         display: none;
     }
 }
 
+.table {
+    vertical-align: middle;
+    text-align: center;
+    table-layout: auto;
+}
 
+.table.table-hover {
+    --mdb-table-hover-bg: #ddd;
+    --mdb-table-hover-color: black;
+}
