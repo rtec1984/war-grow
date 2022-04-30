@@ -33,7 +33,7 @@
       <div class="topnav" id="myTopnav">
         <x-jet-application-mark class="block h-9 w-auto" />
         <x-jet-nav-link href="/regras"><i class="fas fa-exclamation-circle"></i>
-          {{ __('Regras2') }}
+          {{ __('Regras') }}
         </x-jet-nav-link>
         <x-jet-nav-link href="/ranking"><i class="fas fa-trophy"></i>
           {{ __('Ranking') }}
