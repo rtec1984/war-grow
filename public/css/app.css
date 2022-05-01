@@ -2676,7 +2676,7 @@ footer {
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -2761,7 +2761,7 @@ footer {
     align-items: center;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 640px) {
     .img-thumbnail {
         padding: 0.25rem;
         background-color: #fff;
@@ -2777,7 +2777,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 640px) {
     .img-thumbnail {
         padding: 0.25rem;
         background-color: #fff;
