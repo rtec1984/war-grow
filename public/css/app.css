@@ -2777,7 +2777,7 @@ footer {
     }
 }
 
-@media screen and (max-width: fit-content(20em)) {
+@media screen and (max-width: 576px) {
     .img-thumbnail {
         padding: 0.25rem;
         background-color: #fff;
