@@ -2742,6 +2742,7 @@ footer {
 .sair {
     display: flex;
     margin-top: 0em;
+    width: 100%;
 }
 
 .font-medium {

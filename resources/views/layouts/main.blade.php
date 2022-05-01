@@ -53,7 +53,7 @@
         @auth
         <form class="sair" method="POST" action="{{ route('logout') }}">
           @csrf
-          <x-jet-nav-link href="{{ route('logout') }}" style="width: 100%; onclick="event.preventDefault();
+          <x-jet-nav-link href="{{ route('logout') }}" onclick="event.preventDefault();
                     this.closest('form').submit();"><i class="fas fa-sign-out-alt"></i>
             {{ __('Sair') }}
           </x-jet-nav-link>
