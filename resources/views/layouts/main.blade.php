@@ -51,6 +51,7 @@
         </x-jet-nav-link>
         @endguest
         @auth
+      <x-jet-nav-link>
         <form class="sair" method="POST" action="{{ route('logout') }}">
           @csrf
           <x-jet-nav-link href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -58,6 +59,7 @@
             {{ __('Sair') }}
           </x-jet-nav-link>
         </form>
+      </x-jet-nav-link>
         @endauth
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>

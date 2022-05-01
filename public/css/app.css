@@ -2744,11 +2744,6 @@ footer {
     margin-top: 0em;
 }
 
-.sair form:hover {
-    background-color: #ddd;
-    color: rgb(120, 41, 41);
-}
-
 .font-medium {
     font-weight: 500;
     font-size: large;
