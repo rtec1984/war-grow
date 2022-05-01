@@ -2631,6 +2631,9 @@ footer {
     color: black;
 }
 
+.mb-4:hover {
+    background-color: #ddd;
+}
 
 /* Add a black background color to the top navigation */
 
@@ -2733,16 +2736,22 @@ footer {
     font-size: xx-large;
 }
 
+.btn-floating.btn-lg, .btn-group-lg>.btn-floating.btn {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border-radius: 0;
+}
+
 .mb-4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 0px !important;
 }
 
 .sair {
     display: flex;
     margin-top: 0em;
-    width: 100%;
 }
 
 .font-medium {
