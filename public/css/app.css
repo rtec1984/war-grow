@@ -2777,7 +2777,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 100%) {
     .img-thumbnail {
         padding: 0.25rem;
         background-color: #fff;
