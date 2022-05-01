@@ -93,7 +93,7 @@
         </a>
 
         <!-- Whatsapp -->
-        <a class="btn btn-link btn-floating btn-lg m-1" href="https://chat.whatsapp.com/Kw5aROV8UboCTtGVPnkhbC"
+        <a class="btn btn-link btn-floating btn-lg m-1" href="https://chat.whatsapp.com/CurZlhqH5wJKEvcQs0zWGw"
           target="_blank">
           <i class="fab fa-whatsapp	"></i>
           <p class="web">Grupo no WhatsApp</p>
