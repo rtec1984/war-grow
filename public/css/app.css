@@ -2777,7 +2777,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 100%) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
     .img-thumbnail {
         padding: 0.25rem;
         background-color: #fff;
