@@ -2746,7 +2746,7 @@ footer {
 
 .sair form:hover {
     background-color: #ddd;
-    color: black;
+    color: rgb(120, 41, 41);
 }
 
 .font-medium {
