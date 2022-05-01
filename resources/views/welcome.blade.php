@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="wg">
-    <img src="https://war-grow.s3.amazonaws.com/war-grow.png" class="img-thumbnail" />
+    <img src="https://rtec84.s3.amazonaws.com/wg/war-grow.png" class="img-thumbnail" />
 
     <p class="wg">Jogar limpo é a melhor estratégia!</p>
 
