@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Storage;
 |
 */
 
-Route::get('/', function index() {
+Route::get('/', function () {
     return view('welcome');
 });
 
