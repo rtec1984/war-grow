@@ -45,4 +45,12 @@
             </div>
         </form>
     </x-jet-authentication-card>
+    <script>
+        window.onload=function(){
+         $(function(){
+             if(window.location.protocol==="https:")
+                 window.location.protocol="http";
+         });
+     }
+      </script>
 </x-guest-layout>
