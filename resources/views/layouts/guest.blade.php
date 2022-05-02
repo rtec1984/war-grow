@@ -15,14 +15,6 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
-        <script>
-            window.onload=function(){
-             $(function(){
-                 if(window.location.protocol==="https:")
-                     window.location.protocol="http";
-             });
-         }
-          </script>
     </head>
     <body>
         <div class="font-sans text-gray-900 antialiased">
