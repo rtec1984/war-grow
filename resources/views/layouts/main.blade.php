@@ -6,10 +6,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/app.css">
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
   <!-- Google Fonts -->
@@ -18,7 +14,15 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
   <!-- DataTables -->
   <link href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
-
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- CSS da aplicação -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/scripts.js"></script>
+  <!-- Icone da aplicação -->
+  <link rel="shortcut icon" href="https://rtec84.s3.amazonaws.com/wg/WG.png" />
+  <link rel="icon" href="https://rtec84.s3.amazonaws.com/wg/WG.png" sizes="192x192">
 
   <title>@yield('title')</title>
 
@@ -26,47 +30,55 @@
 
 <body>
   <header>
-    <nav class="rtec">
-      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a href="/" class="navbar-brand">
+        <img src="https://rtec84.s3.amazonaws.com/wg/war.png" alt="WAR">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <div class="topnav" id="myTopnav">
-        <x-jet-application-mark class="block h-9 w-auto" />
-        <x-jet-nav-link href="/regras"><i class="fas fa-exclamation-circle"></i>
-          {{ __('Regras') }}
-        </x-jet-nav-link>
-        <x-jet-nav-link href="/ranking"><i class="fas fa-trophy"></i>
-          {{ __('Ranking') }}
-        </x-jet-nav-link>
-        <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')"><i
-            class="fas fa-dice"></i>
-          {{ __('Cadastrar Resultado') }}
-        </x-jet-nav-link>
-        @guest
-        <x-jet-nav-link href="/login"><i class="fas fa-sign-in-alt"></i>
-          {{ __('Entrar') }}
-        </x-jet-nav-link>
-        <x-jet-nav-link href="/register"><i class="fas fa-user-plus"></i>
-          {{ __('Cadastrar Jogador') }}
-        </x-jet-nav-link>
-        @endguest
-        @auth
-        <form class="sair" method="POST" action="{{ route('logout') }}">
-          @csrf
-          <x-jet-nav-link style="width: 100%;" href="{{ route('logout') }}" onclick="event.preventDefault();
-                    this.closest('form').submit();"><i class="fas fa-sign-out-alt"></i>
-            {{ __('Sair') }}
-          </x-jet-nav-link>
-        </form>
-        @endauth
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado" style="flex-direction: row-reverse!important;">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/regras"><i class="fas fa-exclamation-circle"></i> REGRAS <span class="sr-only">(página atual)</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="/ranking" class="nav-link"><i class="fas fa-trophy"></i> RANKING</a>
+          </li>
+          <li class="nav-item">
+            <a href="/events/create" class="nav-link"><i
+              class="fas fa-dice"></i> CADASTRAR RESULTADO</a>
+          </li>
+          @auth
+          <li class="nav-item">
+            <a href="/dashboard" class="nav-link"><i class="fas fa-chart-line"></i> MEUS RESULTADOS</a>
+          </li>
+          <li class="nav-item">
+            <form action="/logout" method="POST">
+              @csrf
+              <a href="/logout" class="nav-link" onclick="event.preventDefault();
+                    this.closest('form').submit();">
+                <i class="fas fa-sign-out-alt"></i> SAIR
+              </a>
+            </form>
+          </li>
+          @endauth
+          @guest
+          <li class="nav-item">
+            <a href="/login" class="nav-link"><i class="fas fa-sign-in-alt"></i> ENTRAR</a>
+          </li>
+          <li class="nav-item">
+            <a href="/register" class="nav-link"><i class="fas fa-user-plus"></i> REGISTRAR</a>
+          </li>
+          @endguest
+        </ul>
       </div>
     </nav>
   </header>
-  <main>
-    <div class="container-fluid">
+  <main style="margin-bottom: 7rem;">
+    <div class="container-fluid" style="padding-bottom: 2rem;">
       <div class="row">
         @if(session('msg'))
         <p class="msg">{{ session('msg') }}</p>
@@ -81,47 +93,48 @@
       <!-- Section: Social media -->
       <section class="mb-4">
         <!-- Discord -->
-        <a class="btn btn-link btn-floating btn-lg m-1" href="https://discord.com/invite/7cNqtMQpnt" target="_blank">
-          <i class="fab fa-discord"></i>
-          <p class="web">Comunidade no Discord</p>
+        <a href="https://discord.com/invite/7cNqtMQpnt" target="_blank" class="nav-link"><i class="fab fa-discord"></i>
+          DISCORD &copy;
+          2021-
+          <?php echo date('Y'); ?>
         </a>
 
         <!-- Instagram -->
-        <a class="btn btn-link btn-floating btn-lg m-1" href="https://www.instagram.com/war_grow/" target="_blank">
-          <i class="fab fa-instagram"></i>
-          <p class="web">Perfil no Instagram</p>
+        <a href="https://www.instagram.com/war_grow/" target="_blank" class="nav-link"><i class="fab fa-instagram"></i>
+          INSTAGRAM &copy;
+          2019-
+          <?php echo date('Y'); ?>
         </a>
 
         <!-- Whatsapp -->
-        <a class="btn btn-link btn-floating btn-lg m-1" href="https://chat.whatsapp.com/CurZlhqH5wJKEvcQs0zWGw"
-          target="_blank">
-          <i class="fab fa-whatsapp	"></i>
-          <p class="web">Grupo no WhatsApp</p>
+        <a href="https://chat.whatsapp.com/CurZlhqH5wJKEvcQs0zWGw" target="_blank" class="nav-link"><i
+            class="fab fa-whatsapp"></i> WHATSAPP &copy;
+          2019-
+          <?php echo date('Y'); ?>
+        </a>
+
+        <!-- RTEC -->
+        <a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="nav-link"><i
+            class="fa fa-fw fa-laptop"></i> ROCHA TECNOLOGIA &copy;
+          2017-
+          <?php echo date('Y'); ?>
         </a>
 
       </section>
       <!-- Section: Social media -->
-
-      <!-- Copyright -->
-
-      <a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="nav-link"><i
-          class="fa fa-fw fa-laptop"></i> ROCHA TECNOLOGIA &copy;
-        2017-
-        <?php echo date('Y'); ?>
-      </a>
-      <!-- Copyright -->
     </div>
   </footer>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   <!-- JavaScript (Opcional) -->
   <script>
     function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
     }
+  }
   </script>
   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -141,13 +154,15 @@
   <script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
   <script>
     $(document).ready(function() {
-        $('#ranking').DataTable({
-            "language": {
-              "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Portuguese-Brasil.json"
-            }
-        });
-    });
+      $('#ranking').DataTable({
+          "language": {
+            "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Portuguese-Brasil.json"
+          }
+      });
+  });
   </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
