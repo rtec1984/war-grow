@@ -27,6 +27,6 @@ Route::get('/ranking', function () {
     return view('ranking');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->get('/painel', function () {
+    return view('painel);
+})->name('painel');
