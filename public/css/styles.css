@@ -1,0 +1,295 @@
+/* General */
+* {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+
+.row {
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.btn-primary {
+  background-color: #757575;
+  border: 2px solid #000000;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.msg {
+  color: #ffffff;
+  background-color: #757575;
+  border: 2px solid #000000;
+  width: 100%;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+#info-container .already-joined-msg {
+  margin: 15px 0;
+  color: #ffffff;
+  background-color: #757575;
+  border: 2px solid #000000;
+  padding: 10px;
+  width: 275px;
+}
+
+/* navbar */
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem;
+}
+
+/* Search Container */
+#search-container {
+  background-image: url("https://rtec84.s3.amazonaws.com/wg/war-grow.png");
+  background-position: center;
+  height: 620px;
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
+
+#search-container form {
+  width: 20%;
+  margin: 0 auto;
+  display: none;
+}
+
+/* Events list */
+#events-container {
+  padding-top: 1rem;
+  padding-bottom: 3.5rem;
+}
+
+#events-container h2 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#events-container .subtitle {
+  color: #757575;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#cards-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#events-container .card {
+  margin: .5%;
+  position: relative;
+  display: flex;
+  min-width: auto;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+}
+
+#events-container img {
+  max-height: 150px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.card .card-date {
+  font-size: 14px;
+  font-weight: bold;
+  color: #757575;
+}
+
+.card .card-title {
+  color: #212121;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.card-participants {
+  font-size: 14px;
+  font-weight: bold;
+  color: #757575;
+}
+
+/* Event create page */
+#event-create-container {
+  padding: 30px
+}
+
+#event-create-container label {
+  font-weight: bold;
+}
+
+#event-create-container input,
+#event-create-container select,
+#event-create-container textarea {
+  font-size: 14px;
+}
+
+/* Event page */
+#image-container,
+#info-container {
+  margin-top: 30px;
+}
+
+#image-container img {
+  border-radius: 10px;
+}
+
+#info-container h1 {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#info-container p {
+  margin: 0;
+  font-size: 14px;
+  display: flex;
+}
+
+#info-container h3,
+#description-container h3 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#info-container ion-icon {
+  font-size: 16px;
+  color: #000000;
+  margin-right: 5px;
+}
+
+#info-container #event-submit {
+  margin: 14px 0;
+}
+
+#items-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 14px;
+}
+
+#items-list li {
+  display: flex;
+}
+
+#description-container {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* Dashboard */
+.dashboard-title-container {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.dashboard-events-container th {
+  width: auto;
+}
+
+.dashboard-events-container form {
+  display: inline-block;
+}
+
+/* Edit page */
+
+.img-preview {
+  width: 100px;
+  margin-top: 20px;
+}
+
+/* footer */
+
+footer {
+  background-color: #333;
+  position:fixed;
+  margin-bottom: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+
+.rtec a {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.rtec a:hover {
+  background-color: transparent;
+  color: #777;
+}
+
+.btn-floating .fab,
+.btn-floating .far,
+.btn-floating .fas {
+    width: 2.3125rem;
+    line-height: 2.3125rem;
+    font-size: xx-large;
+}
+
+.mb-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: -0.5rem !important;
+    padding-bottom: 0.5rem;
+}
+
+  .row {
+    margin: 0;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.table th {
+  font-weight: 900;
+  text-align: center;
+}
+
+.table td {
+  font-weight: 900;
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
