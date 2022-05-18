@@ -17,7 +17,7 @@ use App\Http\Controllers\EventController;
 
 Route::get('/', [EventController::class, 'index']);
 Route::get('/events/create', [EventController::class, 'create'])->middleware('auth');
-Route::get('/events/{id}', [EventController::class, 'show2']);
+Route::get('/events/{id}', [EventController::class, 'resultado']);
 Route::post('/events', [EventController::class, 'store']);
 Route::delete('/events/{id}', [EventController::class, 'destroy'])->middleware('auth');
 Route::get('/events/edit/{id}', [EventController::class, 'edit'])->middleware('auth');
@@ -31,7 +31,7 @@ Route::get('/ranking', function () {
     return view('ranking');
 });
 
-Route::get('/dashboard2', [EventController::class, 'dashboard2'])->middleware('auth');
+Route::get('/resultados', [EventController::class, 'resultados'])->middleware('auth');
 
 Route::post('/events/join/{id}', [EventController::class, 'joinEvent'])->middleware('auth');
 

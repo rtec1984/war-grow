@@ -5,10 +5,16 @@
   font-weight: bold;
 }
 
-
+.h1, h1 {
+    font-size: 1.5rem;
+}
 
 .row {
   margin: 0;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .container-fluid {
@@ -70,12 +76,6 @@
   display: none;
 }
 
-#search-container form {
-  width: 20%;
-  margin: 0 auto;
-  display: none;
-}
-
 /* Events list */
 #events-container {
   padding-top: 1rem;
@@ -111,12 +111,6 @@
   border-radius: 0.25rem;
 }
 
-#events-container img {
-  max-height: 150px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem;
@@ -132,42 +126,22 @@
   color: #757575;
 }
 
-.card .card-title {
-  color: #212121;
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-.card-participants {
-  font-size: 14px;
-  font-weight: bold;
-  color: #757575;
-}
-
 /* Event create page */
-#event-create-container {
-  padding: 30px
-}
 
 #event-create-container label {
   font-weight: bold;
 }
 
 #event-create-container input,
-#event-create-container select,
-#event-create-container textarea {
+#event-create-container select {
   font-size: 14px;
+  font-weight: bold;
 }
 
 /* Event page */
 #image-container,
 #info-container {
   margin-top: 30px;
-}
-
-#image-container img {
-  border-radius: 10px;
 }
 
 #info-container h1 {
@@ -188,7 +162,7 @@
 }
 
 #info-container ion-icon {
-  font-size: 16px;
+  font-size: 36px;
   color: #000000;
   margin-right: 5px;
 }
@@ -197,26 +171,12 @@
   margin: 14px 0;
 }
 
-#items-list {
-  list-style: none;
-  padding-left: 0;
-  font-size: 14px;
-}
-
-#items-list li {
-  display: flex;
-}
-
 #description-container {
   margin-top: 30px;
   font-size: 14px;
 }
 
 /* Dashboard */
-.dashboard-title-container {
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
 
 .dashboard-events-container th {
   width: auto;
@@ -224,13 +184,6 @@
 
 .dashboard-events-container form {
   display: inline-block;
-}
-
-/* Edit page */
-
-.img-preview {
-  width: 100px;
-  margin-top: 20px;
 }
 
 /* footer */
@@ -263,20 +216,14 @@ footer {
 }
 
 .mb-4 {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: -0.5rem !important;
     padding-bottom: 0.5rem;
 }
 
-  .row {
-    margin: 0;
-    padding-top: 2rem;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
+  
 
 .table th {
   font-weight: 900;

@@ -9,9 +9,9 @@
     @csrf
     @method('PUT')
     <div class="form-group">
-      <p class="card-date"><ion-icon name="dice"></ion-icon> {{ $event->partida }}</p>
-      <label for="partida">NÚMERO DA PARTIDA:</label>
-      <select class="form-select" aria-label="partida" id="partida" name="partida">
+      <label for="partida">EDITAR PARTIDA:</label>
+      <select class="form-select" aria-label="partida" id="partida" name="partida" required>
+        <option value="">{{ $event->partida }}</option>
         <option value="PARTIDA 01">PARTIDA 01</option>
         <option value="PARTIDA 02">PARTIDA 02</option>
         <option value="PARTIDA 03">PARTIDA 03</option>
@@ -46,15 +46,14 @@
     </div>
     <br>
     <div class="form-group">
-      <p class="card-date"><ion-icon name="calendar"></ion-icon> {{ date('d/m/Y', strtotime($event->date)) }}</p>
-      <label for="date">DATA DA PARTIDA:</label>
-      <input type="date" class="form-control" id="date" name="date">
+      <label for="date">EDITAR DATA:</label>
+      <input type="date" class="form-control" id="date" name="date" required>
     </div>
     <br>
     <div class="form-group">
-      <p class="card-date"><ion-icon name="trophy"></ion-icon> {{ ($event->vitoria) }}</p>
-      <label for="vitoria">VITÓRIA NO:</label>
+      <label for="vitoria">EDITAR VITÓRIA:</label>
       <select class="form-select" aria-label="vitoria" id="vitoria" name="vitoria" required>
+        <option value="">{{ ($event->vitoria) }}</option>
         <option value="TEMPO">TEMPO</option>
         <option value="OBJETIVO">OBJETIVO</option>
       </select>

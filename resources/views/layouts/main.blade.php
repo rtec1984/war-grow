@@ -53,7 +53,10 @@
           </li>
           @auth
           <li class="nav-item">
-            <a href="/dashboard" class="nav-link"><i class="fas fa-chart-line"></i> MEUS RESULTADOS</a>
+            <a href="/resultados" class="nav-link"><i class="fas fa-chart-line"></i> MEUS RESULTADOS</a>
+          </li>
+          <li class="nav-item">
+            <a href="/user/profile" class="nav-link"><i class="fas fa-address-card"></i> MEU PERFIL</a>
           </li>
           <li class="nav-item">
             <form action="/logout" method="POST">
@@ -77,8 +80,8 @@
       </div>
     </nav>
   </header>
-  <main style="margin-bottom: 7rem;">
-    <div class="container-fluid" style="padding-bottom: 2rem;">
+  <main>
+    <div class="container-fluid">
       <div class="row">
         @if(session('msg'))
         <p class="msg">{{ session('msg') }}</p>

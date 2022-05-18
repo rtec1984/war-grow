@@ -4,12 +4,13 @@
 
 @section('content')
 
-<div id="event-create-container" class="col-md-2 offset-md-1">
+<div id="event-create-container" class="col-auto offset-md-1">
   <form action="/events" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
       <label for="partida">NÚMERO DA PARTIDA:</label> 
       <select class="form-select" aria-label="partida" id="partida" name="partida" required>
+        <option value="">ESCOLHA O NÚMERO</option>
         <option value="PARTIDA 01">PARTIDA 01</option>
         <option value="PARTIDA 02">PARTIDA 02</option>
         <option value="PARTIDA 03">PARTIDA 03</option>
@@ -49,8 +50,9 @@
     </div>
     <br>
     <div class="form-group">
-      <label for="vitoria">VITÓRIA NO:</label>
+      <label for="vitoria">TIPO DE VITÓRIA:</label>
       <select class="form-select" aria-label="vitoria" id="vitoria" name="vitoria" required>
+        <option value="">ESCOLHA O TIPO</option>
         <option value="TEMPO">TEMPO</option>
         <option value="OBJETIVO">OBJETIVO</option>
       </select>
