@@ -1,17 +1,15 @@
-@extends('layouts.main')
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Cadastrar Resultado') }}
+        </h2>
+    </x-slot>
 
-@section('title', 'Meus resultados')
-
-@section('content')
-
-<div class="col-md-10 offset-md-1 dashboard-title-container">
-    <h1>Meus resultados</h1>
-</div>
-<div class="col-md-10 offset-md-1 dashboard-events-container">
-    @if(count($events) > 0)
-    @else
-    <p>Você ainda não tem resultados, <a href="/events/create">cadastrar resultado</a></p>
-    @endif
-</div>
-
-@endsection
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+                <x-jet-welcome />
+            </div>
+        </div>
+    </div>
+</x-app-layout>

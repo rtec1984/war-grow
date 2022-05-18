@@ -38,7 +38,7 @@ class EventController extends Controller
         return redirect('/')->with('msg', 'Resultado cadastrado com sucesso!');
     }
 
-    public function show($id)
+    public function show2($id)
     {
 
         $event = Event::findOrFail($id);
@@ -59,11 +59,11 @@ class EventController extends Controller
 
         $eventOwner = User::where('id', $event->user_id)->first()->toArray();
 
-        return view('events.show', ['event' => $event, 'eventOwner' => $eventOwner, 'hasUserJoined' => $hasUserJoined]);
+        return view('events.show2', ['event' => $event, 'eventOwner' => $eventOwner, 'hasUserJoined' => $hasUserJoined]);
     }
 
 
-    public function dashboard()
+    public function dashboard2()
     {
 
         $user = auth()->user();
@@ -83,7 +83,7 @@ class EventController extends Controller
 
         Event::findOrFail($id)->delete();
 
-        return redirect('/dashboard')->with('msg', 'Resultado excluído com sucesso!');
+        return redirect('/dashboard2')->with('msg', 'Resultado excluído com sucesso!');
     }
 
     public function edit($id)
@@ -94,7 +94,7 @@ class EventController extends Controller
         $event = Event::findOrFail($id);
 
         if ($user->id != $event->user_id) {
-            return redirect('/dashboard');
+            return redirect('/dashboard2');
         }
 
         return view('events.edit', ['event' => $event]);
@@ -107,7 +107,7 @@ class EventController extends Controller
 
         Event::findOrFail($request->id)->update($data);
 
-        return redirect('/dashboard')->with('msg', 'Resultado editado com sucesso!');
+        return redirect('/dashboard2')->with('msg', 'Resultado editado com sucesso!');
     }
 
     public function joinEvent($id)
@@ -119,7 +119,7 @@ class EventController extends Controller
 
         $event = Event::findOrFail($id);
 
-        return redirect('/dashboard')->with('msg', 'Sua participação está confirmada no resultado da ' . $event->partida . ' - ' . date('d/m/Y', strtotime($event->date)));
+        return redirect('/dashboard2')->with('msg', 'Sua participação está confirmada no resultado da ' . $event->partida . ' - ' . date('d/m/Y', strtotime($event->date)));
     }
 
     public function leaveEvent($id)
@@ -131,6 +131,6 @@ class EventController extends Controller
 
         $event = Event::findOrFail($id);
 
-        return redirect('/dashboard')->with('msg', 'Você saiu com sucesso do resultado da ' . $event->partida . ' - ' . date('d/m/Y', strtotime($event->date)));
+        return redirect('/dashboard2')->with('msg', 'Você saiu com sucesso do resultado da ' . $event->partida . ' - ' . date('d/m/Y', strtotime($event->date)));
     }
 }
