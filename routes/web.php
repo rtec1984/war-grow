@@ -31,7 +31,7 @@ Route::get('/ranking', function () {
     return view('ranking');
 });
 
-Route::get('/dashboard', [EventController::class, 'dashboard2'])->middleware('auth');
+Route::get('/dashboard2', [EventController::class, 'dashboard2'])->middleware('auth');
 
 Route::post('/events/join/{id}', [EventController::class, 'joinEvent'])->middleware('auth');
 
