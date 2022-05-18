@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Editando: ' . $event->partida . ' - ' . date('d/m/Y', strtotime($event->date)))
+@section('title', 'WAR - Editando: ' . $event->partida . ' - ' . date('d/m/Y', strtotime($event->date)))
 
 @section('content')
 

@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Cadastrar resultado')
+@section('title', 'WAR - Cadastrar resultado')
 
 @section('content')
 

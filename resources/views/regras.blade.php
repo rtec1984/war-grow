@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Regras')
+@section('title', 'WAR - Regras')
 
 @section('content')
 <div class="regras">
