@@ -44,7 +44,7 @@
         </tbody>
     </table>
     @else
-    <p>Você ainda não tem resultados, <a href="/events/create">Cadastrar resultado!</a></p>
+    <p>Você ainda não tem resultados, <a href="/events/create">cadastrar resultado!</a></p>
     @endif
 </div>
 <div class="col-md-10 offset-md-1 dashboard-title-container">

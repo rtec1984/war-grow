@@ -26,6 +26,7 @@ class EventController extends Controller
     {
 
         $event = new Event;
+
         $event->partida = $request->partida;
         $event->date = $request->date;
         $event->vitoria = $request->vitoria;
