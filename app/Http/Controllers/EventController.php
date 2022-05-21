@@ -12,7 +12,9 @@ class EventController extends Controller
 
     public function index()
     {        
-        $events = Event::all();
+        $events = Event::all()
+        ->sortBy('id',SORT_REGULAR,true)
+        ->take(10);
 
         return view('welcome', ['events' => $events]);
     }
