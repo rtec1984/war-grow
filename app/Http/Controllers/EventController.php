@@ -11,7 +11,7 @@ class EventController extends Controller
 {
 
     public function index()
-    {
+    {        
         $events = Event::all();
 
         return view('welcome', ['events' => $events]);
@@ -26,7 +26,6 @@ class EventController extends Controller
     {
 
         $event = new Event;
-
         $event->partida = $request->partida;
         $event->date = $request->date;
         $event->vitoria = $request->vitoria;
@@ -35,14 +34,13 @@ class EventController extends Controller
         $event->vencedor = $user->name;
         $event->save();
 
-        return redirect('/')->with('msg', 'Resultado cadastrado com sucesso!');
+        return redirect() ->route('resultado', [$event->id])->with('msg', 'Resultado cadastrado com sucesso!');
     }
 
     public function resultado($id)
     {
 
         $event = Event::findOrFail($id);
-
         $user = auth()->user();
         $hasUserJoined = false;
 
@@ -67,9 +65,7 @@ class EventController extends Controller
     {
 
         $user = auth()->user();
-
         $events = $user->events;
-
         $eventsAsParticipant = $user->eventsAsParticipant;
 
         return view(
@@ -90,7 +86,6 @@ class EventController extends Controller
     {
 
         $user = auth()->user();
-
         $event = Event::findOrFail($id);
 
         if ($user->id != $event->user_id) {
@@ -104,7 +99,6 @@ class EventController extends Controller
     {
 
         $data = $request->all();
-
         Event::findOrFail($request->id)->update($data);
 
         return redirect('/resultados')->with('msg', 'Resultado editado com sucesso!');
@@ -114,9 +108,7 @@ class EventController extends Controller
     {
 
         $user = auth()->user();
-
         $user->eventsAsParticipant()->attach($id);
-
         $event = Event::findOrFail($id);
 
         return redirect('/resultados')->with('msg', 'Sua participação está confirmada no resultado da ' . $event->partida . ' - ' . date('d/m/Y', strtotime($event->date)));
@@ -126,9 +118,7 @@ class EventController extends Controller
     {
 
         $user = auth()->user();
-
         $user->eventsAsParticipant()->detach($id);
-
         $event = Event::findOrFail($id);
 
         return redirect('/resultados')->with('msg', 'Você saiu com sucesso do resultado da ' . $event->partida . ' - ' . date('d/m/Y', strtotime($event->date)));
