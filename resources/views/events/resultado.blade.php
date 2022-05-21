@@ -18,24 +18,24 @@
       <p class="card-date">
         <ion-icon name="people"></ion-icon> {{ count($event->users) }} PARTICIPANTES
       </p>
-        @foreach($event->users as $name)
-          <p class="card-date"><ion-icon name="person"></ion-icon> {{ $name->name }}</p>
-        @endforeach
-        @if(count($event->users)<6)
-      @if(!$hasUserJoined)
-      <form action="/events/join/{{ $event->id }}" method="POST">
+      @foreach($event->users as $name)
+      <p class="card-date">
+        <ion-icon name="person"></ion-icon> {{ $name->name }}
+      </p>
+      @endforeach
+      @if(count($event->users)<6) @if(!$hasUserJoined) <form action="/events/join/{{ $event->id }}" method="POST">
         @csrf
         <a href="/events/join/{{ $event->id }}" class="btn btn-primary" id="event-submit" onclick="event.preventDefault();
                 this.closest('form').submit();">
           Confirmar participação
         </a>
-      </form>
-      @else
-      <p class="msg">Você já está participando deste resultado!</p>
-      @endif
-      @else
-      <p class="msg">Limite de participantes atingido!</p>
-      @endif
+        </form>
+        @else
+        <p class="msg">Você já está participando deste resultado!</p>
+        @endif
+        @else
+        <p class="msg">Limite de participantes atingido!</p>
+        @endif
     </div>
   </div>
 </div>
