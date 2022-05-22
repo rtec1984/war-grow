@@ -28,7 +28,8 @@ Route::get('/regras', function () {
 });
 
 Route::get('/ranking', function () {
-    return view('ranking');
+    $data = Data::all ();
+    return view('ranking')->withData ( $data );
 });
 
 Route::get('/resultados', [EventController::class, 'resultados'])->middleware('auth');
