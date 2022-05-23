@@ -25,12 +25,12 @@
                 <tbody>
 
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Primeiro lugar</td>
-                        <td>100</td>
-                        <td>10</td>
-                        <td>10</td>
-                        <td>100%</td>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
