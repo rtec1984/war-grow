@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
-
 use App\Models\Event;
 use App\Models\User;
 class EventController extends Controller
@@ -28,12 +26,10 @@ class EventController extends Controller
     {
 
         $event = new Event;
-        $event->partida = $request->partida;
         $event->date = $request->date;
         $event->vitoria = $request->vitoria;
         $user = auth()->user();
         $event->user_id = $user->id;
-        $event->vencedor = $user->name;
         $event->save();
 
         return redirect() ->route('resultado', [$event->id])->with('msg', 'Resultado cadastrado com sucesso!');
@@ -65,11 +61,9 @@ class EventController extends Controller
 
     public function resultados()
     {
-
         $user = auth()->user();
         $events = $user->events;
         $eventsAsParticipant = $user->eventsAsParticipant;
-
         return view(
             'events.resultados',
             ['events' => $events, 'eventsasparticipant' => $eventsAsParticipant]
@@ -113,7 +107,7 @@ class EventController extends Controller
         $user->eventsAsParticipant()->attach($id);
         $event = Event::findOrFail($id);
 
-        return redirect('/resultados')->with('msg', 'Sua participação está confirmada no resultado da ' . $event->partida . ' - ' . date('d/m/Y', strtotime($event->date)));
+        return redirect('/resultados')->with('msg', 'Sua participação está confirmada no resultado da PARTIDA Nº ' . $event->id . ' - ' . date('d/m/Y', strtotime($event->date)));
     }
 
     public function leaveEvent($id)
@@ -123,6 +117,6 @@ class EventController extends Controller
         $user->eventsAsParticipant()->detach($id);
         $event = Event::findOrFail($id);
 
-        return redirect('/resultados')->with('msg', 'Você saiu com sucesso do resultado da ' . $event->partida . ' - ' . date('d/m/Y', strtotime($event->date)));
+        return redirect('/resultados')->with('msg', 'Você saiu com sucesso do resultado da PARTIDA Nº ' . $event->id . ' - ' . date('d/m/Y', strtotime($event->date)));
     }
 }

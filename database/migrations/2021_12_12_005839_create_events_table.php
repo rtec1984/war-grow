@@ -16,10 +16,8 @@ class CreateEventsTable extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string("partida");
             $table->dateTime('date');
-            $table->string("vitoria");
-            $table->string('vencedor');
+            $table->integer("vitoria");
             $table->foreignId('user_id')->constrained()
             ->onUpdate('cascade')
             ->onDelete('cascade');

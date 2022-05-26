@@ -1,19 +1,20 @@
 @extends('layouts.main')
 
-@section('title', 'WAR - '. $event->partida . ' - ' . date('d/m/Y', strtotime($event->date)))
+@section('title', 'WAR - PARTIDA Nº '. $event->id . ' - ' . date('d/m/Y', strtotime($event->date)))
 
 @section('content')
 
 <div id="cards-container" class="row">
-  <div class="card col-md-3">
+  <div class="card col-auto">
     <div class="card-body">
       <p class="card-date">
-        <ion-icon name="dice"></ion-icon> {{ $event->partida }} <ion-icon name="calendar"></ion-icon> {{ date('d/m/Y',
+        <ion-icon name="dice"></ion-icon> PARTIDA Nº {{ $event->id }} <ion-icon name="calendar"></ion-icon> {{
+        date('d/m/Y',
         strtotime($event->date)) }}
       </p>
       <p class="card-date">
-        <ion-icon name="trophy"></ion-icon> {{ ($event->vitoria) }} <ion-icon name="star-outline"></ion-icon> {{
-        $event->vencedor }}
+        <ion-icon name="trophy"></ion-icon> {{ ($event->vitoria) }} PONTOS <ion-icon name="star-outline"></ion-icon> {{
+        $eventOwner['name'] }}
       </p>
       <p class="card-date">
         <ion-icon name="people"></ion-icon> {{ count($event->users) }} PARTICIPANTES

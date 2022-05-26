@@ -7,17 +7,15 @@
 <div class="col-md-10 offset-md-1 dashboard-title-container">
     <h1>Meus resultados:</h1>
 </div>
-<div class="col-md-10 offset-md-1 dashboard-events-container">
+<div class="col-md-6 offset-md-1 dashboard-events-container">
     @if(count($events) > 0)
     <table class="table table-hover">
         <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">ID</th>
                 <th scope="col">PARTIDA</th>
                 <th scope="col">DATA</th>
                 <th scope="col">VITÓRIA</th>
-                <th scope="col">VENCEDOR</th>
                 <th scope="col">AÇÕES</th>
             </tr>
         </thead>
@@ -25,13 +23,11 @@
             @foreach($events as $event)
             <tr>
                 <td scropt="row">{{ $loop->index + 1 }}</td>
-                <td>{{ $event->id }}</td>
-                <td>{{ $event->partida }}</td>
+                <td>PARTIDA Nº {{ $event->id }}</td>
                 <td>{{ date('d/m/Y', strtotime($event->date)) }}</td>
-                <td>{{ $event->vitoria }}</td>
-                <td>{{ $event->vencedor }}</td>
-                <td><a href="/events/{{ $event->id }}" class="btn btn-info btn-sm"><ion-icon name="eye-outline"></ion-icon></a> <a href="/events/edit/{{ $event->id }}" class="btn btn-warning btn-sm edit-btn">
-                        <ion-icon name="create-outline"></ion-icon></a>
+                <td>{{ $event->vitoria }} PONTOS</td>
+                <td><a href="/events/edit/{{ $event->id }}" class="btn btn-warning btn-sm edit-btn">
+                    <ion-icon name="create-outline"></ion-icon></a>
                     <form action="/events/{{ $event->id }}" method="POST">
                         @csrf
                         @method('DELETE')
@@ -50,17 +46,14 @@
 <div class="col-md-10 offset-md-1 dashboard-title-container">
     <h1>Resultados que estou participando:</h1>
 </div>
-<div class="col-md-10 offset-md-1 dashboard-events-container">
+<div class="col-md-4 offset-md-1 dashboard-events-container">
     @if(count($eventsasparticipant) > 0)
     <table class="table table-hover">
         <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">ID</th>
                 <th scope="col">PARTIDA</th>
                 <th scope="col">DATA</th>
-                <th scope="col">VITÓRIA</th>
-                <th scope="col">VENCEDOR</th>
                 <th scope="col">AÇÕES</th>
             </tr>
         </thead>
@@ -68,11 +61,8 @@
             @foreach($eventsasparticipant as $event)
             <tr>
                 <td scropt="row">{{ $loop->index + 1 }}</td>
-                <td>{{ $event->id }}</td>
-                <td>{{ $event->partida }}</td>
+                <td>PARTIDA Nº {{ $event->id }}</td>
                 <td>{{ date('d/m/Y', strtotime($event->date)) }}</td>
-                <td>{{ $event->vitoria }}</td>
-                <td>{{ $event->vencedor }}</td>
                 <td><a href="/events/{{ $event->id }}" class="btn btn-info btn-sm"><ion-icon name="eye-outline"></ion-icon></a>
                     <form action="/events/leave/{{ $event->id }}" method="POST">
                         @csrf

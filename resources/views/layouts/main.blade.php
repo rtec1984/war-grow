@@ -19,7 +19,6 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- CSS da aplicação -->
   <link rel="stylesheet" href="/css/styles.css">
-  <script src="/js/scripts.js"></script>
   <!-- Icone da aplicação -->
   <link rel="shortcut icon" href="https://rtec84.s3.amazonaws.com/wg/WG.png" />
   <link rel="icon" href="https://rtec84.s3.amazonaws.com/wg/WG.png" sizes="192x192">
@@ -127,7 +126,6 @@
       <!-- Section: Social media -->
     </div>
   </footer>
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   <!-- JavaScript (Opcional) -->
   <script>
     function myFunction() {
@@ -149,7 +147,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
   </script>
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
   <!-- DataTables -->
