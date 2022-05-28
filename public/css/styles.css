@@ -6,11 +6,11 @@
 }
 
 .row {
-  padding: 2rem;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
+  --bs-gutter-x: 0;
 }
 
 .btn-primary {
@@ -34,57 +34,18 @@
   padding: 0.5rem;
 }
 
-#info-container .already-joined-msg {
-  margin: 15px 0;
-  color: #ffffff;
-  background-color: #757575;
-  border: 2px solid #000000;
-  padding: 10px;
-  width: 275px;
-}
-
 /* navbar */
 .navbar {
   position: relative;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem;
-}
-
-.navbar-nav .nav-link {
-  padding: 0.5rem;
-}
-
-/* Search Container */
-#search-container {
-  background-image: url("https://rtec84.s3.amazonaws.com/wg/war-grow.png");
-  background-position: center;
-  height: 620px;
-  padding: 10px;
-  text-align: center;
-  display: none;
+  padding: 1rem;
 }
 
 /* Events list */
-#events-container {
-  padding-top: 1rem;
-  padding-bottom: 3.5rem;
-}
-
-#events-container h2 {
-  margin-bottom: 10px;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-#events-container .subtitle {
-  color: #757575;
-  margin-bottom: 30px;
-  font-size: 14px;
-  font-weight: bold;
-}
 
 #cards-container {
   display: flex;
@@ -92,7 +53,7 @@
 }
 
 #events-container .card {
-  margin: .5%;
+  margin: 0.5rem;
   position: relative;
   display: flex;
   min-width: auto;
@@ -138,44 +99,6 @@
   font-weight: bold;
 }
 
-/* Event page */
-#image-container,
-#info-container {
-  margin-top: 30px;
-}
-
-#info-container h1 {
-  font-size: 18px;
-  font-weight: 900;
-}
-
-#info-container p {
-  margin: 0;
-  font-size: 14px;
-  display: flex;
-}
-
-#info-container h3,
-#description-container h3 {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-#info-container ion-icon {
-  font-size: 36px;
-  color: #000000;
-  margin-right: 5px;
-}
-
-#info-container #event-submit {
-  margin: 14px 0;
-}
-
-#description-container {
-  margin-top: 30px;
-  font-size: 14px;
-}
-
 /* Dashboard */
 
 .dashboard-events-container th {
@@ -216,11 +139,10 @@ footer {
 }
 
 .mb-4 {
-    display: none;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: -0.5rem !important;
-    padding-bottom: 0.5rem;
+    justify-content: center;
+    margin: 0 !important;
 }
 
   
@@ -240,3 +162,8 @@ label {
   padding-bottom: 0.5rem;
 }
 
+.mx-auto {
+  margin-right: auto!important;
+  margin-left: auto!important;
+  margin-bottom: 7rem;
+}

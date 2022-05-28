@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div id="event-create-container" class="col-auto">
+<div style="margin-top: 2rem;" id="event-create-container" class="col-auto">
   <form action="/events" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
