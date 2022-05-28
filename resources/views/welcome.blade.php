@@ -20,7 +20,7 @@
         </div>
         @endforeach
         @if(count($events) == 0)
-            <h2>Não há resultados disponíveis!</h2>
+            <h4>Não há resultados disponíveis!</h4>
         @endif
     </div>
 </div>
