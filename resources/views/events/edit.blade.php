@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div id="event-create-container" class="col-auto offset-md-1">
+<div id="event-create-container" class="col-auto">
   <form action="/events/update/{{ $event->id }}" method="POST" enctype="multipart/form-data">
     @csrf
     @method('PUT')
@@ -14,8 +14,8 @@
     </div>
     <br>
     <div class="form-group">
-      <label for="vitoria">EDITAR VITÓRIA:</label>
-      <select class="form-select" aria-label="vitoria" id="vitoria" name="vitoria" required>
+      <label for="victory">EDITAR VITÓRIA:</label>
+      <select class="form-select" aria-label="victory" id="victory" name="victory" required>
         <option value="">SELECIONE</option>
         <option value="5">TEMPO</option>
         <option value="10">OBJETIVO</option>

@@ -27,15 +27,15 @@ class EventController extends Controller
 
         $event = new Event;
         $event->date = $request->date;
-        $event->vitoria = $request->vitoria;
+        $event->victory = $request->victory;
         $user = auth()->user();
         $event->user_id = $user->id;
         $event->save();
 
-        return redirect() ->route('resultado', [$event->id])->with('msg', 'Resultado cadastrado com sucesso!');
+        return redirect() ->route('result', [$event->id])->with('msg', 'Resultado cadastrado com sucesso!');
     }
 
-    public function resultado($id)
+    public function result($id)
     {
 
         $event = Event::findOrFail($id);
@@ -55,17 +55,17 @@ class EventController extends Controller
 
         $eventOwner = User::where('id', $event->user_id)->first()->toArray();
 
-        return view('events.resultado', ['event' => $event, 'eventOwner' => $eventOwner, 'hasUserJoined' => $hasUserJoined]);
+        return view('events.result', ['event' => $event, 'eventOwner' => $eventOwner, 'hasUserJoined' => $hasUserJoined]);
     }
 
 
-    public function resultados()
+    public function results()
     {
         $user = auth()->user();
         $events = $user->events;
         $eventsAsParticipant = $user->eventsAsParticipant;
         return view(
-            'events.resultados',
+            'events.results',
             ['events' => $events, 'eventsasparticipant' => $eventsAsParticipant]
         );
     }
@@ -75,7 +75,7 @@ class EventController extends Controller
 
         Event::findOrFail($id)->delete();
 
-        return redirect('/resultados')->with('msg', 'Resultado excluído com sucesso!');
+        return redirect('/results')->with('msg', 'Resultado excluído com sucesso!');
     }
 
     public function edit($id)
@@ -85,7 +85,7 @@ class EventController extends Controller
         $event = Event::findOrFail($id);
 
         if ($user->id != $event->user_id) {
-            return redirect('/resultados');
+            return redirect('/results');
         }
 
         return view('events.edit', ['event' => $event]);
@@ -97,7 +97,7 @@ class EventController extends Controller
         $data = $request->all();
         Event::findOrFail($request->id)->update($data);
 
-        return redirect('/resultados')->with('msg', 'Resultado editado com sucesso!');
+        return redirect('/results')->with('msg', 'Resultado editado com sucesso!');
     }
 
     public function joinEvent($id)
@@ -107,7 +107,7 @@ class EventController extends Controller
         $user->eventsAsParticipant()->attach($id);
         $event = Event::findOrFail($id);
 
-        return redirect('/resultados')->with('msg', 'Sua participação está confirmada no resultado da PARTIDA Nº ' . $event->id . ' - ' . date('d/m/Y', strtotime($event->date)));
+        return redirect('/results')->with('msg', 'Sua participação está confirmada no resultado da PARTIDA Nº ' . $event->id . ' - ' . date('d/m/Y', strtotime($event->date)));
     }
 
     public function leaveEvent($id)
@@ -117,6 +117,6 @@ class EventController extends Controller
         $user->eventsAsParticipant()->detach($id);
         $event = Event::findOrFail($id);
 
-        return redirect('/resultados')->with('msg', 'Você saiu com sucesso do resultado da PARTIDA Nº ' . $event->id . ' - ' . date('d/m/Y', strtotime($event->date)));
+        return redirect('/results')->with('msg', 'Você saiu com sucesso do resultado da PARTIDA Nº ' . $event->id . ' - ' . date('d/m/Y', strtotime($event->date)));
     }
 }

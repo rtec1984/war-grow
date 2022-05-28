@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div id="event-create-container" class="col-auto offset-md-1">
+<div id="event-create-container" class="col-auto">
   <form action="/events" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
@@ -13,8 +13,8 @@
     </div>
     <br>
     <div class="form-group">
-      <label for="vitoria">TIPO DE VITÓRIA:</label>
-      <select class="form-select" aria-label="vitoria" id="vitoria" name="vitoria" required>
+      <label for="victory">TIPO DE VITÓRIA:</label>
+      <select class="form-select" aria-label="victory" id="victory" name="victory" required>
         <option value="">ESCOLHA O TIPO</option>
         <option value="5">TEMPO</option>
         <option value="10">OBJETIVO</option>

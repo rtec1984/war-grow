@@ -41,7 +41,7 @@
       <div class="collapse navbar-collapse" id="conteudoNavbarSuportado" style="flex-direction: row-reverse!important;">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="/regras"><i class="fas fa-exclamation-circle"></i> REGRAS <span class="sr-only">(página atual)</span></a>
+            <a class="nav-link" href="/rules"><i class="fas fa-exclamation-circle"></i> REGRAS <span class="sr-only">(página atual)</span></a>
           </li>
           <li class="nav-item">
             <a href="/ranking" class="nav-link"><i class="fas fa-trophy"></i> RANKING</a>
@@ -52,7 +52,7 @@
           </li>
           @auth
           <li class="nav-item">
-            <a href="/resultados" class="nav-link"><i class="fas fa-chart-line"></i> MEUS RESULTADOS</a>
+            <a href="/results" class="nav-link"><i class="fas fa-chart-line"></i> MEUS RESULTADOS</a>
           </li>
           <li class="nav-item">
             <a href="/user/profile" class="nav-link"><i class="fas fa-address-card"></i> MEU PERFIL</a>

@@ -4,10 +4,8 @@
 
 @section('content')
 
-<div class="col-md-10 offset-md-1 dashboard-title-container">
-    <h1>Meus resultados:</h1>
-</div>
-<div class="col-md-6 offset-md-1 dashboard-events-container">
+<h4>Meus resultados:</h4>
+<div class="col-md-4 dashboard-events-container">
     @if(count($events) > 0)
     <table class="table table-hover">
         <thead>
@@ -25,7 +23,7 @@
                 <td scropt="row">{{ $loop->index + 1 }}</td>
                 <td>PARTIDA Nº {{ $event->id }}</td>
                 <td>{{ date('d/m/Y', strtotime($event->date)) }}</td>
-                <td>{{ $event->vitoria }} PONTOS</td>
+                <td>{{ $event->victory }} PONTOS</td>
                 <td><a href="/events/edit/{{ $event->id }}" class="btn btn-warning btn-sm edit-btn">
                     <ion-icon name="create-outline"></ion-icon></a>
                     <form action="/events/{{ $event->id }}" method="POST">
@@ -43,10 +41,8 @@
     <p>Você ainda não tem resultados, <a href="/events/create">cadastrar resultado!</a></p>
     @endif
 </div>
-<div class="col-md-10 offset-md-1 dashboard-title-container">
-    <h1>Resultados que estou participando:</h1>
-</div>
-<div class="col-md-4 offset-md-1 dashboard-events-container">
+ <h4>Resultados que estou participando:</h4>
+<div class="col-md-4 dashboard-events-container">
     @if(count($eventsasparticipant) > 0)
     <table class="table table-hover">
         <thead>

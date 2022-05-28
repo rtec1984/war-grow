@@ -6,14 +6,14 @@
 
 <div id="cards-container" class="row">
   <div class="card col-auto">
-    <div class="card-body">
+    <div class="card-body2">
       <p class="card-date">
         <ion-icon name="dice"></ion-icon> PARTIDA Nº {{ $event->id }} <ion-icon name="calendar"></ion-icon> {{
         date('d/m/Y',
         strtotime($event->date)) }}
       </p>
       <p class="card-date">
-        <ion-icon name="trophy"></ion-icon> {{ ($event->vitoria) }} PONTOS <ion-icon name="star-outline"></ion-icon> {{
+        <ion-icon name="trophy"></ion-icon> {{ ($event->victory) }} PONTOS <ion-icon name="star-outline"></ion-icon> {{
         $eventOwner['name'] }}
       </p>
       <p class="card-date">

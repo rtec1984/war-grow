@@ -3,7 +3,7 @@
 @section('title', 'WAR - Regras')
 
 @section('content')
-<div class="regras">
+<div class="col-md-6" style="text-align: justify">
     <h5>RESPEITO AOS INTEGRANTES DO GRUPO DENTRO E FORA DO JOGO</h5>
     <p>Evitar postar mensagens que possam ser interpretadas como sendo de caráter ofensivo, as
         brincadeiras devem ser saudáveis e sempre com respeito. Não passe correntes, faça propagandas, discuta política,

@@ -7,7 +7,7 @@
 <div class="container">
 
     <div class="row">
-        <div class="col-md-6 offset-md-1">
+        <div class="col-md-4">
             <br>
             <table class="table table-bordered table-striped table-hover table-light table-responsive" id="ranking">
 
