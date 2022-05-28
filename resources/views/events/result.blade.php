@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div id="cards-container" class="row">
+<div style="margin-top: 2rem;" id="cards-container" class="row">
   <div class="card col-auto">
     <div class="card-body2">
       <p class="card-date">

@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div id="event-create-container" class="col-auto">
+<div style="margin-top: 2rem;" id="event-create-container" class="col-auto">
   <form action="/events/update/{{ $event->id }}" method="POST" enctype="multipart/form-data">
     @csrf
     @method('PUT')
