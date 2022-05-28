@@ -96,28 +96,28 @@
       <section class="mb-4">
         <!-- Discord -->
         <a href="https://discord.com/invite/7cNqtMQpnt" target="_blank" class="nav-link"><i class="fab fa-discord"></i>
-          DISCORD &copy;
+          DISCORD 
           2021-
           <?php echo date('Y'); ?>
         </a>
 
         <!-- Instagram -->
         <a href="https://www.instagram.com/war_grow/" target="_blank" class="nav-link"><i class="fab fa-instagram"></i>
-          INSTAGRAM &copy;
+          INSTAGRAM 
           2019-
           <?php echo date('Y'); ?>
         </a>
 
         <!-- Whatsapp -->
         <a href="https://chat.whatsapp.com/CurZlhqH5wJKEvcQs0zWGw" target="_blank" class="nav-link"><i
-            class="fab fa-whatsapp"></i> WHATSAPP &copy;
+            class="fab fa-whatsapp"></i> WHATSAPP 
           2019-
           <?php echo date('Y'); ?>
         </a>
 
         <!-- RTEC -->
         <a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="nav-link"><i
-            class="fa fa-fw fa-laptop"></i> ROCHA TECNOLOGIA &copy;
+            class="fa fa-fw fa-laptop"></i> ROCHA TECNOLOGIA 
           2017-
           <?php echo date('Y'); ?>
         </a>

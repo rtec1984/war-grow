@@ -167,3 +167,8 @@ label {
   margin-left: auto!important;
   margin-bottom: 7rem;
 }
+
+.fab {
+  font-family: "Font Awesome 5 Brands";
+  font-size: large;
+}
