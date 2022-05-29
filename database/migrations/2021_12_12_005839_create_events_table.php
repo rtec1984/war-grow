@@ -17,6 +17,7 @@ class CreateEventsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->dateTime('date');
+            $table->integer("players");
             $table->integer("victory");
             $table->foreignId('user_id')->constrained()
             ->onUpdate('cascade')

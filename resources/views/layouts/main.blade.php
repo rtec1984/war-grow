@@ -94,33 +94,21 @@
     <div class="rtec">
       <!-- Section: Social media -->
       <section class="mb-4">
-        <!-- Discord -->
-        <a href="https://discord.com/invite/7cNqtMQpnt" target="_blank" class="nav-link"><i class="fab fa-discord"></i>
-          DISCORD 
-          2021-
-          <?php echo date('Y'); ?>
-        </a>
-
+        
         <!-- Instagram -->
-        <a href="https://www.instagram.com/war_grow/" target="_blank" class="nav-link"><i class="fab fa-instagram"></i>
-          INSTAGRAM 
-          2019-
-          <?php echo date('Y'); ?>
-        </a>
+        <a href="https://www.instagram.com/war_grow/" target="_blank" class="nav-link"><i class="fab fa-instagram"></i></a>
+        
+        <!-- Discord -->
+        <a href="https://discord.com/invite/7cNqtMQpnt" target="_blank" class="nav-link"><i class="fab fa-discord"></i></a>
+
+
+        <h6 style="margin-bottom: 0px;margin-top: 10px;">WAR-GROW 2019-<?php echo date('Y'); ?></h6>
 
         <!-- Whatsapp -->
-        <a href="https://chat.whatsapp.com/CurZlhqH5wJKEvcQs0zWGw" target="_blank" class="nav-link"><i
-            class="fab fa-whatsapp"></i> WHATSAPP 
-          2019-
-          <?php echo date('Y'); ?>
-        </a>
+        <a href="https://chat.whatsapp.com/CurZlhqH5wJKEvcQs0zWGw" target="_blank" class="nav-link"><i class="fab fa-whatsapp"></i></a>
 
         <!-- RTEC -->
-        <a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="nav-link"><i
-            class="fa fa-fw fa-laptop"></i> ROCHA TECNOLOGIA 
-          2017-
-          <?php echo date('Y'); ?>
-        </a>
+        <a href="https://rochatec.lojaintegrada.com.br/" target="_blank" class="nav-link"><i class="fa fa-fw fa-laptop"></i></a>
 
       </section>
       <!-- Section: Social media -->

@@ -24,7 +24,7 @@
         <ion-icon name="person"></ion-icon> {{ $name->name }}
       </p>
       @endforeach
-      @if(count($event->users)<6) @if(!$hasUserJoined) <form action="/events/join/{{ $event->id }}" method="POST">
+      @if(count($event->users)<($event->players)) @if(!$hasUserJoined) <form action="/events/join/{{ $event->id }}" method="POST">
         @csrf
         <a href="/events/join/{{ $event->id }}" class="btn btn-primary" id="event-submit" onclick="event.preventDefault();
                 this.closest('form').submit();">

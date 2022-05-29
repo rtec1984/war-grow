@@ -42,7 +42,7 @@
     @endif
 </div>
  <h4>Resultados que estou participando:</h4>
-<div style="margin-bottom: 9rem;" class="col-md-4 dashboard-events-container">
+<div style="margin-bottom: 2rem;" class="col-md-4 dashboard-events-container">
     @if(count($eventsasparticipant) > 0)
     <table class="table table-hover">
         <thead>

@@ -28,6 +28,7 @@ class EventController extends Controller
         $event = new Event;
         $event->date = $request->date;
         $event->victory = $request->victory;
+        $event->players = $request->players;
         $user = auth()->user();
         $event->user_id = $user->id;
         $event->save();
