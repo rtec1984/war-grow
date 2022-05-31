@@ -12,7 +12,7 @@ class EventController extends Controller
     {        
         $events = Event::all()
         ->sortBy('id',SORT_REGULAR,true)
-        ->take(12);
+        ->take(10);
 
         return view('welcome', ['events' => $events]);
     }
