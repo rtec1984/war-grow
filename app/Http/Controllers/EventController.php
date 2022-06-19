@@ -120,14 +120,6 @@ class EventController extends Controller
         return redirect('/results')->with('msg', 'Você saiu com sucesso do resultado da PARTIDA Nº ' . $event->id . ' - ' . date('d/m/Y', strtotime($event->date)));
     }
 
-    public function ranking()
-    {
-        $users = User::all();
-        $events = Event::all();
-
-        return view('ranking', ['users' => $users],['events' => $events]);
-    }
-
     public function teste()
     {
         $users = User::all();

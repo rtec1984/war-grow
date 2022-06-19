@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\RankingController;
 
 Route::get('/', [EventController::class, 'index']);
 Route::get('/events/create', [EventController::class, 'create'])->middleware('auth');
@@ -27,8 +28,6 @@ Route::get('/rules', function () {
     return view('rules');
 });
 
-Route::get('/ranking', [EventController::class, 'ranking']);
-
 Route::get('/results', [EventController::class, 'results'])->middleware('auth');
 
 Route::post('/events/join/{id}', [EventController::class, 'joinEvent'])->middleware('auth')->name('join');
@@ -41,3 +40,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 
 Route::get('/teste', [EventController::class, 'teste']);
+
+Route::get('/ranking', [RankingController::class, 'index']);
