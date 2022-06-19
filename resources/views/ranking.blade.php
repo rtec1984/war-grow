@@ -10,7 +10,6 @@
         <div class="col-md-4">
             <br>
             <table class="table table-bordered table-striped table-hover table-light table-responsive" id="ranking">
-
                 <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -21,22 +20,21 @@
                         <th scope="col">%</th>
                     </tr>
                 </thead>
-
                 <tbody>
-
+                    @foreach ($users as $user)
                     <tr>
-                        <th scope="row"></th>
-                        <td></td>
+                        <td scropt="row">{{ $loop->index + 1 }}</td>
+                        <td>{{$user->name}}</td>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>
     </div>
-
 </div>
 
 @endsection

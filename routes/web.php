@@ -27,9 +27,7 @@ Route::get('/rules', function () {
     return view('rules');
 });
 
-Route::get('/ranking', function () {
-    return view('ranking');
-});
+Route::get('/ranking', [EventController::class, 'ranking']);
 
 Route::get('/results', [EventController::class, 'results'])->middleware('auth');
 
@@ -40,3 +38,6 @@ Route::delete('/events/leave/{id}', [EventController::class, 'leaveEvent'])->mid
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+
+Route::get('/teste', [EventController::class, 'teste']);

@@ -5,14 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Event;
 use App\Models\User;
+
 class EventController extends Controller
 {
 
     public function index()
-    {        
+    {
         $events = Event::all()
-        ->sortBy('id',SORT_REGULAR,true)
-        ->take(10);
+            ->sortBy('id', SORT_REGULAR, true)
+            ->take(10);
 
         return view('welcome', ['events' => $events]);
     }
@@ -33,7 +34,7 @@ class EventController extends Controller
         $event->user_id = $user->id;
         $event->save();
 
-        return redirect() ->route('result', [$event->id])->with('msg', 'Resultado cadastrado com sucesso!');
+        return redirect()->route('result', [$event->id])->with('msg', 'Resultado cadastrado com sucesso!');
     }
 
     public function result($id)
@@ -65,10 +66,8 @@ class EventController extends Controller
         $user = auth()->user();
         $events = $user->events;
         $eventsAsParticipant = $user->eventsAsParticipant;
-        return view(
-            'events.results',
-            ['events' => $events, 'eventsasparticipant' => $eventsAsParticipant]
-        );
+
+        return view('events.results', ['events' => $events, 'eventsasparticipant' => $eventsAsParticipant]);
     }
 
     public function destroy($id)
@@ -119,5 +118,21 @@ class EventController extends Controller
         $event = Event::findOrFail($id);
 
         return redirect('/results')->with('msg', 'Você saiu com sucesso do resultado da PARTIDA Nº ' . $event->id . ' - ' . date('d/m/Y', strtotime($event->date)));
+    }
+
+    public function ranking()
+    {
+        $users = User::all();
+        $events = Event::all();
+
+        return view('ranking', ['users' => $users],['events' => $events]);
+    }
+
+    public function teste()
+    {
+        $users = User::all();
+        $events = Event::all();
+
+        return view('teste', ['users' => $users],['events' => $events]);
     }
 }
