@@ -19,7 +19,7 @@ class RankingController extends Controller
         $users = User::all();
         $events = Event::all();
 
-        return view('ranking', ['users' => $users],['events' => $events]);
+        return view('ranking', ['users' => $users,'events' => $events]);
     }
 
     /**
