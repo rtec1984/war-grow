@@ -25,10 +25,10 @@
                     <tr>
                         <td scropt="row">{{ $loop->index + 1 }}</td>
                         <td>{{$user->name}}</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>{{number_format($points / 100 * $victories / count($user->eventsAsParticipant) * 100), 1}}</td>
+                        <td>{{count($user->eventsAsParticipant)}}</td>
+                        <td>{{$victories}}</td>
+                        <td>{{number_format($victories / count($user->eventsAsParticipant) * 100), 1}}</td>
                     </tr>
                     @endforeach
                 </tbody>

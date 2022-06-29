@@ -39,6 +39,4 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 
-Route::get('/teste', [EventController::class, 'teste']);
-
-Route::get('/ranking', [RankingController::class, 'index']);
+Route::get('/ranking', [EventController::class, 'ranking']);

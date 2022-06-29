@@ -29,10 +29,10 @@ class EventController extends Controller
         $event = new Event;
         $event->date = $request->date;
         $event->victory = $request->victory;
-        $event->players = $request->players;
+        $event->players = $request->players;        
         $user = auth()->user();
         $event->user_id = $user->id;
-        $event->save();
+        $event->save();      
 
         return redirect()->route('result', [$event->id])->with('msg', 'Resultado cadastrado com sucesso!');
     }
@@ -120,11 +120,15 @@ class EventController extends Controller
         return redirect('/results')->with('msg', 'Você saiu com sucesso do resultado da PARTIDA Nº ' . $event->id . ' - ' . date('d/m/Y', strtotime($event->date)));
     }
 
-    public function teste()
+    public function ranking()
     {
-        $users = User::all();
         $events = Event::all();
+        $users = User::all()
+        ->sortBy('name', SORT_REGULAR, false);
+        $victories = 1;
+        $points = 10;    
 
-        return view('teste', ['users' => $users],['events' => $events]);
+        return view('ranking', ['events' => $events, 'users' => $users, 'victories' => $victories, 'points' => $points,]);
     }
+
 }
