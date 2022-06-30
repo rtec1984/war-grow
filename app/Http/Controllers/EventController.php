@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Models\Event;
 use App\Models\User;
@@ -123,12 +123,9 @@ class EventController extends Controller
     public function ranking()
     {
         $events = Event::all();
-        $users = User::all()
-        ->sortBy('name', SORT_REGULAR, false);
-        $victories = 1;
-        $points = 10;    
-
-        return view('ranking', ['events' => $events, 'users' => $users, 'victories' => $victories, 'points' => $points,]);
+        $users = User::all();
+    
+        return view('ranking', ['events' => $events, 'users' => $users]);
     }
 
 }

@@ -25,9 +25,9 @@
                     <tr>
                         <td scropt="row">{{ $loop->index + 1 }}</td>
                         <td>{{$user->name}}</td>
-                        <td>{{number_format($points / 100 * $victories / count($user->eventsAsParticipant) * 100), 1}}</td>
+                        <td>{{number_format(DB::table('events')->where('user_id', $user->id)->pluck('victory')->sum() / 100 * DB::table('events')->where('user_id', $user->id)->select('victory')->count() / count($user->eventsAsParticipant) * 100), 1}}</td>
                         <td>{{count($user->eventsAsParticipant)}}</td>
-                        <td>{{$victories}}</td>
+                        <td>{{$victories = DB::table('events')->where('user_id', $user->id)->select('victory')->count()}}</td>
                         <td>{{number_format($victories / count($user->eventsAsParticipant) * 100), 1}}</td>
                     </tr>
                     @endforeach
