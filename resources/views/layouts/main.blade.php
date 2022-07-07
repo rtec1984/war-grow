@@ -143,9 +143,13 @@
   <script>
     $(document).ready(function() {
       $('#ranking').DataTable({
+
           "language": {
             "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Portuguese-Brasil.json"
-          }
+          },
+
+          "order": [[ 1, 'desc' ], [ 4, 'desc' ]]
+
       });
   });
   </script>

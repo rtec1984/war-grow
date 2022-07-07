@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Models\Event;
 use App\Models\User;
+use Illuminate\Database\Eloquent\Factories\Sequence;
 
 class EventController extends Controller
 {
@@ -123,8 +124,8 @@ class EventController extends Controller
     public function ranking()
     {
         $events = Event::all();
-        $users = User::all();
-    
+        $users = User::all() ->sortBy('name', SORT_REGULAR, false);
+            
         return view('ranking', ['events' => $events, 'users' => $users]);
     }
 
