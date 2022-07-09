@@ -1,11 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Models\Event;
 use App\Models\User;
-use Illuminate\Database\Eloquent\Factories\Sequence;
 
 class EventController extends Controller
 {
