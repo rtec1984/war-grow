@@ -130,6 +130,8 @@ class EventController extends Controller
             ['points', 'desc'],
             ['percent', 'desc'],
             ['victory', 'desc'],
+            ['games', 'asc'],
+            ['name', 'asc'],
         ])->toArray();
 
         return view('ranking', ['events' => $events, 'users' => $list]);
