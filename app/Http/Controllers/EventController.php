@@ -121,11 +121,6 @@ class EventController extends Controller
         return redirect('/results')->with('msg', 'Você saiu com sucesso do resultado da PARTIDA Nº ' . $event->id . ' - ' . date('d/m/Y', strtotime($event->date)));
     }
 
-    function compare_lastname($a, $b)
-    {
-      return strnatcmp($a['points'], $b['points']);
-    }
-
     public function ranking()
     {
         $events = Event::all();
