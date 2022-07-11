@@ -25,7 +25,7 @@ class EventFactory extends Factory
             'date' => now(),
             'players' => rand (3,6),
             'victory' => rand (1,2)*5,
-            'user_id' => rand (1,95),
+            'user_id' => rand (1,20),
         ];
     }
 }

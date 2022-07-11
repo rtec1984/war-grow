@@ -123,10 +123,14 @@ class EventController extends Controller
 
     public function ranking()
     {
-        $events = Event::all();
-        $users = User::all();
+        $events = Event::all($events = 'user_id', 'victory');
+        $users = User::all($users = 'id', 'name');
         $list = Ranking::ranking($users, $events);
-        $list = collect($list)->sortByDesc('points')->toArray();
+        $list = collect($list)->sortBy([
+            ['points', 'desc'],
+            ['percent', 'desc'],
+            ['victory', 'desc'],
+        ])->toArray();
 
         return view('ranking', ['events' => $events, 'users' => $list]);
     }
