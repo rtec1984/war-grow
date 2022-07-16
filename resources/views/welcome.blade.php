@@ -17,6 +17,8 @@
                 <p class="card-date"><ion-icon name="people"></ion-icon> {{ count($event->users) }} PARTICIPANTES</p>
                 <a href="/events/{{ $event->id }}" class="btn btn-primary btn-sm">Detalhes</a>
             </div>
+            <br>
+            <br>
         </div>
         @endforeach
         @if(count($events) == 0)
