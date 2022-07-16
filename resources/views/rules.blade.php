@@ -45,6 +45,6 @@
         todos os outros critérios, ordem alfabética do nome cadastrado.</p>
     <p>O cálculo do Desempenho (%) é feito através da divisão do número de Vitórias (V) pelo número de Jogos (J), já a
         Pontuação (P) é calculada através da soma dos pontos obtidos em cada vitória, 5 pontos se for vitória no tempo e
-        10 pontos se for vitória no objetivo, o resultado dessa soma é multiplicado pelo Desempenho (%).</p>
+        10 pontos se for vitória no objetivo, o resultado dessa soma é multiplicado pelo Desempenho (%).</p><br><br><br>
 </div>
 @endsection
