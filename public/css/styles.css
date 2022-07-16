@@ -172,3 +172,8 @@ label {
   font-family: "Font Awesome 5 Brands";
   font-size: large;
 }
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  --bs-table-accent-bg: #9b9b9b;
+  color: var(--bs-table-striped-color);
+}
