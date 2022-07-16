@@ -71,6 +71,9 @@
             @endforeach
         </tbody>
     </table>
+    <br>
+    <br>
+    <br>
     @else
     <p>Você ainda não está participando de nenhum resultado, <a href="/">veja todos os resultados!</a></p>
     @endif
