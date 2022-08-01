@@ -28,6 +28,10 @@ Route::get('/rules', function () {
     return view('rules');
 });
 
+Route::get('/historic', function () {
+    return view('historic');
+});
+
 Route::get('/results', [EventController::class, 'results'])->middleware('auth');
 
 Route::post('/events/join/{id}', [EventController::class, 'joinEvent'])->middleware('auth')->name('join');

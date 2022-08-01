@@ -44,6 +44,9 @@
             <a class="nav-link" href="/rules"><i class="fas fa-exclamation-circle"></i> REGRAS <span class="sr-only">(página atual)</span></a>
           </li>
           <li class="nav-item">
+            <a href="/historic" class="nav-link"><i class="fas fa-trophy"></i> HISTÓRICO</a>
+          </li>
+          <li class="nav-item">
             <a href="/ranking" class="nav-link"><i class="fas fa-trophy"></i> RANKING</a>
           </li>
           <li class="nav-item">
