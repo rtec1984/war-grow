@@ -5,7 +5,7 @@
 @section('content')
 
 <div style="margin-top: 2rem;" id="event-create-container" class="col-auto">
-  <form action="/events/update/{{ $event->id }}" method="POST" enctype="multipart/form-data">
+  <form action="/events/update/{{ $event->id }}" id="formEdit" method="POST" enctype="multipart/form-data">
     @csrf
     @method('PUT')
     <div class="form-group">
@@ -36,8 +36,17 @@
             NO OBJETIVO 10 PONTOS
           </label>
         </div>
-    <input type="submit" class="btn btn-primary" value="Editar resultado">
+    <input type="submit" id="btnEdit" class="btn btn-primary" value="Editar resultado">
   </form>
 </div>
+
+<script>
+  const Form = document.getElementById('formEdit')
+  let botao = document.getElementById('btnEdit')
+
+  Form.addEventListener('submit', function(){
+      botao.setAttribute('disabled', 'disabled')
+  })
+</script>
 
 @endsection
