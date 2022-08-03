@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-md-6">
             <br>
-            {{-- <h4>Ranking Final de Agosto de 2022</h4>
+            <h4>Ranking Final de Agosto de 2022</h4>
             <table class="table table-bordered table-striped table-hover table-light table-responsive" id="agosto22">
                 <thead>
                     <tr>
@@ -103,7 +103,7 @@
                     </tr>
                 </tbody>
             </table>
-            <br> --}}
+            <br>
             <h4>Ranking Final de Julho de 2022</h4>
             <table class="table table-bordered table-striped table-hover table-light table-responsive" id="julho22">
                 <thead>
@@ -201,8 +201,6 @@
             </table>
             <br>
             <br>
-            <br>
-            <br>
         </div>
     </div>
 </div>
@@ -222,7 +220,7 @@
     });
 });
 </script>
-{{-- <script>
+<script>
     $(document).ready(function() {
       $('#agosto22').DataTable({
   
@@ -235,5 +233,5 @@
   
       });
   });
-</script> --}}
+</script>
 @endsection
