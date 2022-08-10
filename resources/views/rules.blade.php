@@ -46,9 +46,8 @@
     <p>O cálculo do Desempenho (%) é feito através da divisão do número de Vitórias (V) pelo número de Jogos (J), já a
         Pontuação (P) é calculada através da soma dos pontos obtidos em cada vitória, 5 pontos se for vitória no tempo e
         10 pontos se for vitória no objetivo, o resultado dessa soma é multiplicado pelo Desempenho (%).</p>
-        
-        <embed src="https://rtec84.s3.amazonaws.com/wg/war.pdf" width="100%" height="400" alt="pdf" />
 
-        <br><br>
+    <a href="https://rtec84.s3.amazonaws.com/wg/war.pdf" target="_blank">Tutorial para registro, login, cadastro de resultado e participação!</a>
+    <br><br>
 </div>
 @endsection
