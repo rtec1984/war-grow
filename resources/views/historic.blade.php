@@ -110,7 +110,7 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">NOME</th>
-                        <th scope="col">TÍTULOS</th>
+                        <th scope="col">T</th>
                         <th scope="col">P</th>
                         <th scope="col">J</th>
                         <th scope="col">V</th>
