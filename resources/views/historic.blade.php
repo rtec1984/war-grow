@@ -111,9 +111,9 @@
                         <th scope="col">#</th>
                         <th scope="col">NOME</th>
                         <th scope="col">TÍTULOS</th>
-                        <th scope="col">PONTOS</th>
-                        <th scope="col">JOGOS</th>
-                        <th scope="col">VITÓRIAS</th>
+                        <th scope="col">P</th>
+                        <th scope="col">J</th>
+                        <th scope="col">V</th>
                         <th scope="col">%</th>
                     </tr>
                 </thead>
