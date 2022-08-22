@@ -110,7 +110,6 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">NOME</th>
-                        <th scope="col">T</th>
                         <th scope="col">P</th>
                         <th scope="col">J</th>
                         <th scope="col">V</th>
@@ -121,7 +120,6 @@
                     <tr>
                         <td scropt="row">1</td>
                         <td>Paulo Santos</td>
-                        <td>9</td>
                         <td>1533</td>
                         <td>2273</td>
                         <td>526</td>
@@ -130,7 +128,6 @@
                     <tr>
                         <td scropt="row">2</td>
                         <td>Joel Rocha</td>
-                        <td>4</td>
                         <td>1181</td>
                         <td>1691</td>
                         <td>380</td>
@@ -139,7 +136,6 @@
                     <tr>
                         <td scropt="row">3</td>
                         <td>Barbara Moreira</td>
-                        <td>4</td>
                         <td>1008</td>
                         <td>675</td>
                         <td>204</td>
@@ -148,7 +144,6 @@
                     <tr>
                         <td scropt="row">4</td>
                         <td>Ana Formiga</td>
-                        <td>5</td>
                         <td>902</td>
                         <td>1155</td>
                         <td>266</td>
@@ -157,7 +152,6 @@
                     <tr>
                         <td scropt="row">5</td>
                         <td>Carlos Eduardo</td>
-                        <td>1</td>
                         <td>769</td>
                         <td>235</td>
                         <td>84</td>
@@ -166,7 +160,6 @@
                     <tr>
                         <td scropt="row">6</td>
                         <td>Thiago Gasparino</td>
-                        <td>0</td>
                         <td>679</td>
                         <td>539</td>
                         <td>155</td>
@@ -175,7 +168,6 @@
                     <tr>
                         <td scropt="row">7</td>
                         <td>Rondinei Silva</td>
-                        <td>1</td>
                         <td>647</td>
                         <td>778</td>
                         <td>191</td>
@@ -184,7 +176,6 @@
                     <tr>
                         <td scropt="row">8</td>
                         <td>Di Alvez</td>
-                        <td>2</td>
                         <td>612</td>
                         <td>375</td>
                         <td>117</td>
@@ -193,7 +184,6 @@
                     <tr>
                         <td scropt="row">9</td>
                         <td>Marco Antônio</td>
-                        <td>1</td>
                         <td>554</td>
                         <td>208</td>
                         <td>104</td>
@@ -202,7 +192,6 @@
                     <tr>
                         <td scropt="row">10</td>
                         <td>Saulo Chevitarese</td>
-                        <td>0</td>
                         <td>543</td>
                         <td>572</td>
                         <td>156</td>
