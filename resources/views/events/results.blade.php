@@ -26,12 +26,12 @@
                 <td>{{ $event->victory }} PONTOS</td>
                 <td><a href="/events/edit/{{ $event->id }}" class="btn btn-warning btn-sm edit-btn">
                     <ion-icon name="create-outline"></ion-icon></a>
-                    <form action="/events/{{ $event->id }}" method="POST">
+{{--                     <form action="/events/{{ $event->id }}" method="POST">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger btn-sm delete-btn">
                             <ion-icon name="trash-outline"></ion-icon></button>
-                    </form>
+                    </form> --}}
                 </td>
             </tr>
             @endforeach
