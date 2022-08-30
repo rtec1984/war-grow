@@ -42,7 +42,7 @@
     @endif
 </div>
  <h4>Resultados que estou participando:</h4>
-<div style="margin-bottom: 2rem;" class="col-md-4 dashboard-events-container">
+<div style="margin-bottom: 2rem;" class="col-md-2 dashboard-events-container">
     @if(count($eventsasparticipant) > 0)
     <table class="table table-hover">
         <thead>
@@ -60,12 +60,12 @@
                 <td>PARTIDA Nº {{ $event->id }}</td>
                 <td>{{ date('d/m/Y', strtotime($event->date)) }}</td>
                 <td><a href="/events/{{ $event->id }}" class="btn btn-info btn-sm"><ion-icon name="eye-outline"></ion-icon></a>
-                    <form action="/events/leave/{{ $event->id }}" method="POST">
+{{--                     <form action="/events/leave/{{ $event->id }}" method="POST">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-dark btn-sm delete-btn">
                             <ion-icon name="log-out-outline"></ion-icon></button>
-                    </form>
+                    </form> --}}
                 </td>
             </tr>
             @endforeach
