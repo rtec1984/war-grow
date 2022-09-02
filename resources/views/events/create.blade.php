@@ -23,12 +23,12 @@
       </select>
       <br>
       <label for="victory">TIPO DE VITÓRIA:</label>
-      <div class="form-check">
+{{--       <div class="form-check">
         <input class="form-check-input" type="radio" name="victory" id="victory1" value="5">
         <label class="form-check-label" for="victory1">
           NO TEMPO 5 PONTOS
         </label>
-      </div>
+      </div> --}}
       <div class="form-check">
         <input class="form-check-input" type="radio" name="victory" id="victory2" value="10" checked>
         <label class="form-check-label" for="victory2">

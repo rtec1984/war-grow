@@ -23,7 +23,7 @@
         o
         número da partida e data seja montada com o nome, apelido, início e resultado marcados no grupo.
         Partidas sem início e resultado não serão contabilizadas no ranking.</p>
-    <h5>PARTIDAS VENCIDAS NO TEMPO</h5>
+{{--     <h5>PARTIDAS VENCIDAS NO TEMPO</h5>
     <p>Prestar atenção no horário que a partida iniciou para saber informar o início da última rodada no chat. A última
         rodada se inicia sempre após 90 minutos começando pelo primeiro jogador que abre a rodada e
         finalizando no último. Se houver conclusão do objetivo na última rodada a partida vale 10 pontos, senão houver
@@ -37,7 +37,7 @@
     <p>Quem somar mais pontos segundo esse critério terá vencido a partida.</p>
     <h5>RESULTADOS</h5>
     <p>Quem vencer uma partida deve cadastrar o resultado no sistema e confirmar sua participação. Os demais
-        participantes também devem confirmar sua participação para que o ranking seja atualizado corretamente.</p>
+        participantes também devem confirmar sua participação para que o ranking seja atualizado corretamente.</p> --}}
     <h5>RANKING</h5>
     <p>O Ranking é atualizado automaticamente sempre que uma partida for cadastrada e a participação dos jogadores for
         confirmada. Os critérios de desempate do Ranking WG são nesta ordem, maior Pontuação (P), maior Desempenho
