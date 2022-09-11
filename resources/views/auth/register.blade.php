@@ -12,7 +12,7 @@
             @csrf
 
             <div>
-                <x-jet-label for="name" value="{{ __('Nome') }}" />
+                <x-jet-label for="name" value="{{ __('Nome e Sobrenome (Apenas dois, exemplo: War Grow)') }}" />
                 <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             </div>
 
@@ -22,7 +22,7 @@
             </div>
 
             <div class="mt-4">
-                <x-jet-label for="password" value="{{ __('Senha') }}" />
+                <x-jet-label for="password" value="{{ __('Senha (No mínimo 8 caracteres)') }}" />
                 <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
             </div>
 
