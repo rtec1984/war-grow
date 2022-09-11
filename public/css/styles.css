@@ -81,7 +81,7 @@
 }
 
 .card .card-date {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: bold;
   color: #757575;
   text-align: center;
@@ -95,7 +95,7 @@
 
 #event-create-container input,
 #event-create-container select {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -120,7 +120,7 @@ footer {
 }
 
 .rtec a {
-  font-size: 14px;
+  font-size: 1rem;
   color: #ffffff;
   font-weight: 900;
 }
