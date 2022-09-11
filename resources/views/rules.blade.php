@@ -8,6 +8,10 @@
     <p>Evitar postar mensagens que possam ser interpretadas como sendo de caráter ofensivo, as
         brincadeiras devem ser saudáveis e sempre com respeito. Não passe correntes, faça propagandas, discuta política,
         religião, futebol, ou qualquer outro tema que não faça parte do perfil do grupo.</p>
+    <h5>REGISTRO NO SISTEMA</h5>
+    <p>Fazer o registro no sistema em <a href="https://war-grow.ga/register">REGISTRAR</a> com apenas
+        1 nome e 1 sobrenome como no exemplo: "War Grow" para mater o padrão do sistema.
+    </p>
     <h5>LISTA</h5>
     <p>Colocar o nome seguido do apelido entre parênteses e retirar o nome da lista se não for jogar. As listas terão
         validade de até 30 minutos, na hora que a mesa estiver criada os jogadores da lista terão prioridade, mas o
@@ -23,7 +27,13 @@
         o
         número da partida e data seja montada com o nome, apelido, início e resultado marcados no grupo.
         Partidas sem início e resultado não serão contabilizadas no ranking.</p>
-{{--     <h5>PARTIDAS VENCIDAS NO TEMPO</h5>
+    <h5>RESULTADOS</h5>
+    <p>Quem vence a partida deve cadastrar o resultado em <a href="https://war-grow.ga/events/create">CADASTRAR
+            RESULTADO</a> e confirmar a participação. Todos que jogarem devem confirmar a participação após a partida
+        ter sido cadastrada no sistema por quem venceu! Para saber qual foi a última partida cadastrada basta ir em <a
+            href="https://war-grow.ga/">WAR</a> e procurar pelo número da partida que jogou.
+    </p>
+    {{-- <h5>PARTIDAS VENCIDAS NO TEMPO</h5>
     <p>Prestar atenção no horário que a partida iniciou para saber informar o início da última rodada no chat. A última
         rodada se inicia sempre após 90 minutos começando pelo primeiro jogador que abre a rodada e
         finalizando no último. Se houver conclusão do objetivo na última rodada a partida vale 10 pontos, senão houver
@@ -45,9 +55,11 @@
         todos os outros critérios, ordem alfabética do nome cadastrado.</p>
     <p>O cálculo do Desempenho (%) é feito através da divisão do número de Vitórias (V) pelo número de Jogos (J), já a
         Pontuação (P) é calculada através da soma dos pontos obtidos em cada vitória, 5 pontos se for vitória no tempo e
-        10 pontos se for vitória no objetivo, o resultado dessa soma é multiplicado pelo Desempenho (%).</p>
+        10 pontos se for vitória no objetivo, o resultado dessa soma é multiplicado pelo Desempenho (%).
+    </p>
 
-    <a href="https://rtec84.s3.amazonaws.com/wg/war.pdf" target="_blank">Tutorial básico em PDF!</a>
+    <p><a href="https://rtec84.s3.amazonaws.com/wg/war.pdf" target="_blank">Tutorial básico em PDF!</a>
+    </p>
     <br><br>
 </div>
 @endsection
