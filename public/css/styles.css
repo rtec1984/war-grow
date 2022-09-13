@@ -1,7 +1,7 @@
 /* General */
 * {
   font-family: 'Roboto';
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .card .card-date {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
   color: #757575;
   text-align: center;
