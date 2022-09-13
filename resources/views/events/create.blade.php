@@ -13,7 +13,7 @@
     </div>
     <br>
     <div class="form-group">
-      <label for="players">Nº DE JOGADORES:</label>
+      <label for="players">NÚMERO DE JOGADORES:</label>
       <select class="form-select" aria-label="players" id="players" name="players" required>
         <option value="">ESCOLHA O NÚMERO</option>
         <option value="3">3 JOGADORES</option>
@@ -21,8 +21,8 @@
         <option value="5">5 JOGADORES</option>
         <option value="6">6 JOGADORES</option>
       </select>
-      <br>
-      <label for="victory">TIPO DE VITÓRIA:</label>
+      {{-- <br> --}}
+      <label for="victory"></label>
 {{--       <div class="form-check">
         <input class="form-check-input" type="radio" name="victory" id="victory1" value="5">
         <label class="form-check-label" for="victory1">
@@ -32,7 +32,7 @@
       <div class="form-check">
         <input class="form-check-input" type="radio" name="victory" id="victory2" value="10" checked>
         <label class="form-check-label" for="victory2">
-          NO OBJETIVO 10 PONTOS
+          VITÓRIA: 10 PONTOS
         </label>
       </div>
       <input type="submit" id="btnResult" class="btn btn-primary" value="Cadastrar resultado">

@@ -23,19 +23,19 @@
         <option value="6">6 JOGADORES</option>
       </select>
         <br>
-        <label for="victory">TIPO DE VITÓRIA: {{$event->victory}} PONTOS</label>
-{{--         <div class="form-check">
+        {{-- <label for="victory">TIPO DE VITÓRIA: {{$event->victory}} PONTOS</label>
+        <div class="form-check">
           <input class="form-check-input" type="radio" name="victory" id="victory1" value="5">
           <label class="form-check-label" for="victory1">
             NO TEMPO 5 PONTOS
           </label>
-        </div> --}}
+        </div>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="victory" id="victory2" value="10" checked>
           <label class="form-check-label" for="victory2">
             NO OBJETIVO 10 PONTOS
           </label>
-        </div>
+        </div> --}}
     <input type="submit" id="btnEdit" class="btn btn-primary" value="Editar resultado">
   </form>
 </div>
