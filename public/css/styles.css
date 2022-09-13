@@ -1,7 +1,7 @@
 /* General */
 * {
   font-family: 'Roboto';
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -16,7 +16,7 @@
 .btn-primary {
   background-color: #757575;
   border: 2px solid #000000;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .card .card-date {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   color: #757575;
   text-align: center;
@@ -95,7 +95,7 @@
 
 #event-create-container input,
 #event-create-container select {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -120,7 +120,7 @@ footer {
 }
 
 .rtec a {
-  font-size: 16px;
+  font-size: 18px;
   color: #ffffff;
   font-weight: 900;
 }
