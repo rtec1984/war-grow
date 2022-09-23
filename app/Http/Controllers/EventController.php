@@ -108,7 +108,7 @@ class EventController extends Controller
         $user->eventsAsParticipant()->attach($id);
         $event = Event::findOrFail($id);
 
-        return redirect('/results')->with('msg', 'Sua participação está confirmada no resultado da PARTIDA Nº ' . $event->id . ' - ' . date('d/m/Y', strtotime($event->date)));
+        return redirect('/results')->with('msg', 'SUA PARTICIPAÇÃO ESTÁ CONFIRMADA NO RESULTADO DA PARTIDA Nº ' . $event->id . ' - ' . date('d/m/Y', strtotime($event->date)));
     }
 
     public function leaveEvent($id)

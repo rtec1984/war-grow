@@ -11,11 +11,16 @@
         @foreach($events as $event)
         <div class="card col-auto">
             <div class="card-body">
+                @if(count($event->users)<($event->players))
+                <p class="msg2"><ion-icon name='warning-outline'></ion-icon> INCOMPLETA</p>
+                @else
+                <p class="msg1"><ion-icon name='checkbox-outline'></ion-icon> COMPLETA</p>
+                @endif
                 <p class="card-date"><ion-icon name="dice"></ion-icon> PARTIDA Nº {{ $event->id }}</p>
                 <p class="card-date"><ion-icon name="calendar"></ion-icon> {{ date('d/m/Y', strtotime($event->date)) }}</p>
                 <p class="card-date"><ion-icon name="trophy"></ion-icon> {{ ($event->victory) }} PONTOS</p>
-                <p class="card-date"><ion-icon name="people"></ion-icon> {{ count($event->users) }} PARTICIPANTES</p>
-                <a href="/events/{{ $event->id }}" class="btn btn-primary btn-sm">Detalhes</a>
+                <p class="card-date"><ion-icon name="people"></ion-icon> {{ ($event->players) }} PARTICIPANTES</p>
+                <a href="/events/{{ $event->id }}" class="btn btn-primary btn-sm"><ion-icon name='eye-outline'style="font-size: 1.5rem;"></ion-icon></a>
             </div>
         </div>
         @endforeach

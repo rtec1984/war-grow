@@ -4,7 +4,7 @@
 
 @section('content')
 
-<h4 style="margin-top: 2rem;">Meus resultados:</h4>
+<h4 style="margin-top: 2rem;">Resultados que venci:</h4>
 <div class="col-md-3 dashboard-events-container">
     @if(count($events) > 0)
     <table class="table table-hover">
@@ -38,7 +38,7 @@
         </tbody>
     </table>
     @else
-    <p>Você ainda não tem resultados, <a href="/events/create">cadastrar resultado!</a></p>
+    <p>Você ainda não venceu, <a href="/events/create">cadastrar resultado!</a></p>
     @endif
 </div>
  <h4>Resultados que estou participando:</h4>
