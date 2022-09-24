@@ -10,19 +10,26 @@
     <div id="cards-container" class="row" style="margin-bottom: 3rem;">
         @foreach($events as $event)
         <div class="card col-auto">
+            <a href="/events/{{ $event->id }}" style="text-decoration: none;">
             <div class="card-body">
                 @if(count($event->users)<($event->players))
-                <p class="msg2"><ion-icon name='warning-outline'></ion-icon> INCOMPLETA</p>
+                <p class="msg2"><ion-icon name='warning-outline'></ion-icon> &nbsp;INCOMPLETA</p>
                 @else
-                <p class="msg1"><ion-icon name='checkbox-outline'></ion-icon> COMPLETA</p>
+                <p class="msg1"><ion-icon name='checkbox-outline'></ion-icon> &nbsp;COMPLETA</p>
                 @endif
-                <p class="card-date"><ion-icon name="dice"></ion-icon> PARTIDA Nº {{ $event->id }}</p>
-                <p class="card-date"><ion-icon name="calendar"></ion-icon> {{ date('d/m/Y', strtotime($event->date)) }}</p>
-                <p class="card-date"><ion-icon name="trophy"></ion-icon> {{ ($event->victory) }} PONTOS</p>
-                <p class="card-date"><ion-icon name="people"></ion-icon> {{ ($event->players) }} PARTICIPANTES</p>
-                <a href="/events/{{ $event->id }}" class="btn btn-primary btn-sm"><ion-icon name='eye-outline'style="font-size: 1.5rem;"></ion-icon></a>
+                <p class="card-date"><ion-icon name="dice"></ion-icon> &nbsp;PARTIDA Nº {{ $event->id }}</p>
+                <p class="card-date"><ion-icon name="calendar"></ion-icon> &nbsp;{{ date('d/m/Y', strtotime($event->date)) }}</p>
+                <p class="card-date"><ion-icon name="trophy"></ion-icon> &nbsp;{{ ($event->victory) }} PONTOS</p>
+                <p class="card-date"><ion-icon name="people"></ion-icon> &nbsp;{{ ($event->players) }} PARTICIPANTES</p>
+                {{-- <a href="/events/{{ $event->id }}" class="btn btn-primary btn-sm"style="
+                    width: 35%;
+                    display: flex;
+                    justify-content: center;
+                "><ion-icon name='eye-outline'style="font-size: 1.5rem;"></ion-icon></a> --}}
             </div>
+        </a>
         </div>
+
         @endforeach
         @if(count($events) == 0)
             <h4>Não há resultados disponíveis!</h4>
