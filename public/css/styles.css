@@ -18,6 +18,9 @@
   border: 2px solid #000000;
   font-size: 0.95rem;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-primary:hover {
@@ -96,7 +99,14 @@
   background-color: darkgrey;
 }
 
-.card-date {
+.card-body2 {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-game {
   color: #757575;
   margin-top: 0.3rem;
   margin-bottom: 0.3rem;

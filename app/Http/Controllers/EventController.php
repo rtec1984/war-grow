@@ -48,10 +48,9 @@ class EventController extends Controller
         if ($user) {
 
             $userEvents = $user->eventsAsParticipant->toArray();
-
             foreach ($userEvents as $userEvent) {
                 if ($userEvent['id'] == $id) {
-                    $hasUserJoined = true;
+                    $hasUserJoined = true;                    
                 }
             }
         }

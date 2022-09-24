@@ -17,15 +17,10 @@
                 @else
                 <p class="msg1"><ion-icon name='checkbox-outline'></ion-icon> &nbsp;COMPLETA</p>
                 @endif
-                <p class="card-date"><ion-icon name="dice"></ion-icon> &nbsp;PARTIDA Nº {{ $event->id }}</p>
-                <p class="card-date"><ion-icon name="calendar"></ion-icon> &nbsp;{{ date('d/m/Y', strtotime($event->date)) }}</p>
-                <p class="card-date"><ion-icon name="trophy"></ion-icon> &nbsp;{{ ($event->victory) }} PONTOS</p>
-                <p class="card-date"><ion-icon name="people"></ion-icon> &nbsp;{{ ($event->players) }} PARTICIPANTES</p>
-                {{-- <a href="/events/{{ $event->id }}" class="btn btn-primary btn-sm"style="
-                    width: 35%;
-                    display: flex;
-                    justify-content: center;
-                "><ion-icon name='eye-outline'style="font-size: 1.5rem;"></ion-icon></a> --}}
+                <p class="card-game"><ion-icon name="dice"></ion-icon> &nbsp;PARTIDA Nº {{ $event->id }}</p>
+                <p class="card-game"><ion-icon name="calendar"></ion-icon> &nbsp;{{ date('d/m/Y', strtotime($event->date)) }}</p>
+                <p class="card-game"><ion-icon name="trophy"></ion-icon> &nbsp;{{ ($event->victory) }} PONTOS</p>
+                <p class="card-game"><ion-icon name="people"></ion-icon> &nbsp;{{ ($event->players) }} PARTICIPANTES</p>
             </div>
         </a>
         </div>

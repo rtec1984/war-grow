@@ -5,18 +5,20 @@
 @section('content')
 
 <div style="margin-top: 2rem;" id="event-create-container" class="col-auto">
+  <div class="card col-auto">
+    <div class="card-body2">
   <form action="/events/update/{{ $event->id }}" id="formEdit" method="POST" enctype="multipart/form-data">
     @csrf
     @method('PUT')
     <div class="form-group">
-      <label for="date">DATA: {{ date('d/m/Y', strtotime($event->date)) }}</label>
+      <label for="date">{{ date('d/m/Y', strtotime($event->date)) }}</label>
       <input type="date" class="form-control" id="date" name="date" required>
     </div>
     <br>
     <div class="form-group">
-      <label for="players">Nº DE JOGADORES: {{$event->players}}</label>
+      <label for="players">{{$event->players}} JOGADORES</label>
       <select class="form-select" aria-label="players" id="players" name="players" required>
-        <option value="">ESCOLHA O NÚMERO</option>
+        <option value="">ESCOLHA</option>
         <option value="3">3 JOGADORES</option>
         <option value="4">4 JOGADORES</option>
         <option value="5">5 JOGADORES</option>
@@ -36,10 +38,11 @@
             NO OBJETIVO 10 PONTOS
           </label>
         </div> --}}
-    <input type="submit" id="btnEdit" class="btn btn-primary" value="Editar resultado">
+          <input type="submit" id="btnEdit" class="btn btn-primary" value="Editar resultado">
   </form>
 </div>
-
+</div>
+</div>
 <script>
   const Form = document.getElementById('formEdit')
   let botao = document.getElementById('btnEdit')
