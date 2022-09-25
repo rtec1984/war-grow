@@ -57,9 +57,7 @@
         Pontuação (P) é calculada através da soma dos pontos obtidos em cada vitória, 5 pontos se for vitória no tempo e
         10 pontos se for vitória no objetivo, o resultado dessa soma é multiplicado pelo Desempenho (%).
     </p>
-
-    <p><a href="https://rtec84.s3.amazonaws.com/wg/war.pdf" target="_blank">Tutorial básico em PDF!</a>
-    </p>
+    <div style="display: flex;align-content: center;justify-content: center;align-items: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/AbNF3CAy-dE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
     <br><br>
 </div>
 @endsection
