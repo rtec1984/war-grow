@@ -7,9 +7,9 @@
 <div style="margin-top: 2rem;" id="cards-container" class="row">
   <div class="card col-auto">
     <div class="card-body2">
-      <p class="card-game"><ion-icon name="dice"></ion-icon>&nbsp; PARTIDA Nº {{ $event->id }}</p>
-      <p class="card-game"><ion-icon name="calendar"></ion-icon>&nbsp; {{ date('d/m/Y', strtotime($event->date)) }}</p>
-      <p class="card-game"><ion-icon name="trophy"></ion-icon>&nbsp; {{ $eventOwner['name'] }}</p>
+      <p class="card-game2"><ion-icon name="dice"></ion-icon>&nbsp; PARTIDA Nº {{ $event->id }}</p>
+      <p class="card-game2"><ion-icon name="calendar"></ion-icon>&nbsp; {{ date('d/m/Y', strtotime($event->date)) }}</p>
+      <p class="card-game2"><ion-icon name="trophy"></ion-icon>&nbsp; {{ $eventOwner['name'] }}</p>
       {{-- <p class="card-game"><ion-icon name="people"></ion-icon>&nbsp; {{ count($event->users) }} Confirmados</p> --}}
       @foreach($event->users->sortBy(['name', 'asc']) as $name)
       <p class="card-game"><ion-icon name="person"></ion-icon>&nbsp; {{ $name->name }}</p>
