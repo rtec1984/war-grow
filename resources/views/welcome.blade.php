@@ -20,7 +20,7 @@
                 <p class="card-game"><ion-icon name="dice"></ion-icon> &nbsp;PARTIDA Nº {{ $event->id }}</p>
                 <p class="card-game"><ion-icon name="calendar"></ion-icon> &nbsp;{{ date('d/m/Y', strtotime($event->date)) }}</p>
                 <p class="card-game"><ion-icon name="trophy"></ion-icon> &nbsp;{{ ($event->victory) }} PONTOS</p>
-                <p class="card-game"><ion-icon name="people"></ion-icon> &nbsp;{{ ($event->players) }} PARTICIPANTES</p>
+                <p class="card-game"><ion-icon name="people"></ion-icon> &nbsp;{{ ($event->players) }} JOGADORES</p>
             </div>
         </a>
         </div>
