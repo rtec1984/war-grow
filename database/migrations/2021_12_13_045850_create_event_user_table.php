@@ -14,6 +14,7 @@ class CreateEventUserTable extends Migration
     public function up()
     {
         Schema::create('event_user', function (Blueprint $table) {
+            $table->id();
             $table->foreignId('event_id')->constrained()
             ->onUpdate('cascade')
             ->onDelete('cascade');
