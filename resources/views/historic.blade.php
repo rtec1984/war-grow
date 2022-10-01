@@ -4,9 +4,104 @@
 
 @section('content')
 <div class="container">
-
     <div class="row">
         <div class="col-md-6">
+            <br>
+            <h4>Ranking Final de Setembro de 2022</h4>
+            <table class="table table-bordered table-striped table-hover table-light table-responsive" id="setembro22">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">NOME</th>
+                        <th scope="col">P</th>
+                        <th scope="col">J</th>
+                        <th scope="col">V</th>
+                        <th scope="col">%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scropt="row">1</td>
+                        <td>Ana Formiga</td>
+                        <td>68</td>
+                        <td>53</td>
+                        <td>19</td>
+                        <td>36</td>
+                    </tr>
+                    <tr>
+                        <td scropt="row">2</td>
+                        <td>Andre Lacerda</td>
+                        <td>48</td>
+                        <td>25</td>
+                        <td>11</td>
+                        <td>44</td>
+                    </tr>
+                    <tr>
+                        <td scropt="row">3</td>
+                        <td>Joel Rocha</td>
+                        <td>46</td>
+                        <td>37</td>
+                        <td>13</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td scropt="row">4</td>
+                        <td>Levi Francalino</td>
+                        <td>41</td>
+                        <td>20</td>
+                        <td>9</td>
+                        <td>45</td>
+                    </tr>
+                    <tr>
+                        <td scropt="row">5</td>
+                        <td>Saulo Chevitarese</td>
+                        <td>33</td>
+                        <td>11</td>
+                        <td>6</td>
+                        <td>55</td>
+                    </tr>
+                    <tr>
+                        <td scropt="row">6</td>
+                        <td>Gabriel Sandre</td>
+                        <td>23</td>
+                        <td>16</td>
+                        <td>6</td>
+                        <td>38</td>
+                    </tr>
+                    <tr>
+                        <td scropt="row">7</td>
+                        <td>Eloa Alonso</td>
+                        <td>16</td>
+                        <td>39</td>
+                        <td>8</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td scropt="row">8</td>
+                        <td>Elson Alves</td>
+                        <td>14</td>
+                        <td>26</td>
+                        <td>6</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td scropt="row">9</td>
+                        <td>Davi Haas</td>
+                        <td>10</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td scropt="row">10</td>
+                        <td>Renato Kinaip</td>
+                        <td>10</td>
+                        <td>24</td>
+                        <td>5</td>
+                        <td>21</td>
+                    </tr>
+                </tbody>
+            </table>
             <br>
             <h4>Ranking Final de Agosto de 2022</h4>
             <table class="table table-bordered table-striped table-hover table-light table-responsive" id="agosto22">
@@ -401,6 +496,19 @@
 <!-- DataTables -->
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function() {
+    $('#setembro22').DataTable({
+
+        "language": {
+          "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Portuguese-Brasil.json"
+        },
+
+        paging: false,
+        info: false,
+    });
+});
+</script>
 <script>
     $(document).ready(function() {
     $('#agosto22').DataTable({
