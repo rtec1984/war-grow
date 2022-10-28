@@ -6,7 +6,7 @@
 
 <img src="https://rtec84.s3.amazonaws.com/wg/war-grow.png" class="img-fluid" alt="Imagem responsiva" style="padding: 0.5rem; max-width: 957px;">
 <div id="events-container" class="col-md-6">
-    <h4>Últimos resultados...</h4>
+    <h4>Resultados...</h4>
     <div id="cards-container" class="row" style="margin-bottom: 3rem;">
         @foreach($events as $event)
         <div class="card col-auto">
